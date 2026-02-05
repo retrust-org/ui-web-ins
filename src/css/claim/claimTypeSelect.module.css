@@ -1,0 +1,95 @@
+/* claimTypeSelect.module.css */
+
+.claimContainer {
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.section_2 {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.section_2 h1 {
+  color: #1b1e28;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+
+.sectionContentsWrap {
+  width: 100%;
+}
+
+.sectionContentsWrap_claimSelect {
+  width: 100%;
+  margin-top: 18px;
+}
+
+.sectionContentsWrap_claimSelectOption {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sectionContentsWrap_claimSelectOption ul {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: end;
+}
+
+.sectionContentsWrap_claimSelectOption ul li {
+  display: flex;
+  gap: 8px;
+}
+
+.sectionContentsWrap_claimSelectOption ul li p {
+  color: #1b1e28;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+/* 네비게이션 버튼 영역 */
+.navigationButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.backButton,
+.nextButton {
+  flex: 1;
+  max-width: 48%;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.prcdName {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 16px;
+  border: 2px solid #e2e2e2;
+  border-radius: 16px;
+  overflow: hidden;
+  color: #1b1e28;
+}
+
+/* productName이 있을 때 적용될 스타일 */
+.prcdName.hasProduct {
+  border: 2px solid #386937;
+}

@@ -1,0 +1,412 @@
+/* address.module.css */
+#AddressContainer {
+  width: 100%;
+  position: relative;
+}
+.AddressContainerWrap {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  max-width: 440px;
+  background-color: linear-gradient(180dseg, #fff 0%, #faffd7 100%);
+}
+
+.titleSection {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mainTitle {
+  color: #000;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.84px;
+}
+
+.subTitle {
+  color: #4a4a4a;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  padding: 0 5px;
+  width: fit-content;
+  margin: 0 auto;
+}
+.subTitle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50%;
+  background-color: #f8ffcb;
+  z-index: -1;
+}
+
+.searchSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 4%;
+  background: linear-gradient(180deg, #fff 0%, #faffd7 100%);
+  padding-bottom: 30px;
+}
+
+.imagesWrap {
+  width: 100%;
+  margin-top: 32px;
+}
+
+.imagesWrap img {
+  margin: 0 auto;
+  position: relative;
+  top: 10px;
+  z-index: 1;
+}
+
+.searchContents {
+  border-radius: 20px;
+  background: linear-gradient(183deg, #f8ffcb 9.94%, #ddf8eb 103.25%);
+  box-shadow: 0px 1px 8.5px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px 16px;
+  z-index: 5;
+}
+
+.governmentSupportWrap {
+  width: 100%;
+  padding-left: 8px;
+}
+
+.governmentSupport {
+  width: fit-content;
+  display: flex;
+  gap: 2px;
+  background-color: #fff;
+  padding: 10px;
+  align-items: center;
+  position: relative;
+  border-radius: 20px;
+}
+
+.governmentSupport::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background: linear-gradient(to right, #1bf4a6, #00bed8) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.governmentSupport p {
+  color: #00a89e;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.42px;
+}
+.governmentSupport img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+}
+
+.searchBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 50px;
+}
+
+.customInputWrap {
+  width: 100%;
+  padding: 0 18px;
+}
+
+.customInput {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 11px;
+  border-bottom: 2px solid #000;
+  cursor: pointer;
+}
+
+.customInput p {
+  color: #333;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.22px;
+}
+.customInput img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+.searchBoxAnnounce {
+  border-radius: 20px;
+  background: #fff;
+  width: 100%;
+}
+
+.AnnounceContents {
+  width: 100%;
+  padding: 46px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.AnnounceContents img {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+}
+
+.AnnounceContents ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.AnnounceContents ul li {
+  width: 100%;
+  text-align: center;
+}
+.AnnounceContents ul li:nth-child(1) {
+  color: #707070;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.AnnounceContents ul li:nth-child(2) {
+  color: #484646;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+
+/* 모달창 css */
+
+.modalContainer {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.modalContainer h2 {
+  color: #121212;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+
+.mmdalSubTitle {
+  margin-bottom: 32px;
+  color: #828282;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.42px;
+}
+
+.modalContainer ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+/* Grid 방식을 위한 스타일 추가 */
+.modalGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.modalContainer ul li p {
+  color: #828282;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.45px;
+}
+
+.buttonContents {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  padding-top: 35px;
+}
+
+.nextBtn {
+  border-radius: 12px;
+  background-color: #386937;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 18px 0;
+  width: 100%;
+}
+
+.exitBtn {
+  color: #bababa;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* 반응형 스타일 - 중형 모바일 화면 */
+@media screen and (max-width: 768px) {
+  .modalGrid {
+    grid-template-columns: 1.5fr 1fr; /* 모바일 버전: 1.5:1 비율 */
+  }
+
+  .mainTitle {
+    font-size: 26px;
+  }
+
+  .subTitle {
+    font-size: 18px;
+  }
+
+  .customInput p {
+    font-size: 18px;
+  }
+  .searchSection {
+    padding-bottom: 40px;
+  }
+
+  .AnnounceContents ul li:nth-child(1) {
+    font-size: 13px;
+  }
+
+  .AnnounceContents ul li:nth-child(2) {
+    font-size: 15px;
+  }
+
+  .AnnounceContents img {
+    width: 36px;
+    height: 36px;
+    gap: 12px;
+  }
+  #AddressContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 전체 화면 높이 사용 */
+    justify-content: flex-end; /* 컨텐츠를 하단으로 정렬 */
+  }
+}
+
+/* 소형 모바일 화면 */
+@media screen and (max-width: 344px) {
+  .modalGrid {
+    grid-template-columns: 2fr 1fr; /* 소형기기 버전: 2:1 비율 */
+  }
+
+  .mainTitle {
+    font-size: 24px;
+  }
+
+  .subTitle {
+    font-size: 16px;
+  }
+  .governmentSupport {
+    padding: 4px 10px;
+  }
+
+  .governmentSupport img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .governmentSupport p {
+    font-size: 12px;
+  }
+
+  .customInput p {
+    font-size: 16px;
+  }
+
+  .customInput img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .AnnounceContents {
+    padding: 35px 8px;
+  }
+
+  .AnnounceContents ul li:nth-child(1) {
+    font-size: 10px;
+  }
+
+  .AnnounceContents ul li:nth-child(2) {
+    font-size: 12px;
+  }
+
+  .modalContainer h2 {
+    font-size: 18px;
+  }
+
+  .mmdalSubTitle {
+    font-size: 12px;
+  }
+
+  .modalContainer ul li p {
+    font-size: 13px;
+  }
+
+  .nextBtn,
+  .exitBtn {
+    font-size: 14px;
+  }
+  .searchContents {
+    padding: 20px 12px;
+  }
+}

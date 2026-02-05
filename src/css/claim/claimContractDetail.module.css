@@ -1,0 +1,222 @@
+.section {
+  width: 100%;
+}
+
+.sectionWrap {
+  width: 100%;
+  padding: 20px 20px;
+}
+
+.sectionWrap h3 {
+  color: #1b1e28;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33.6px;
+  text-align: left;
+  margin-bottom: 36px;
+  margin-top: 24px;
+}
+.insuPriceContents {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.insuPriceContentsWrap {
+  width: 100%;
+  padding: 16px;
+  background-color: #ebf0eb;
+  border-radius: 12px;
+}
+
+.insuPriceFlexCol {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contentsFlexRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.contentsFlexRow p {
+  color: #66686f;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+}
+
+.contentsFlexRow span {
+  background-color: #38b144;
+  padding: 2px 8px;
+  border-radius: 18px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: right;
+}
+
+.span {
+  color: #386937;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+}
+
+.section_2nd {
+  width: 100%;
+}
+
+.insuUserInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.filterBtnContents {
+  width: 100%;
+}
+
+.filterBtnContents ul {
+  width: 100%;
+  display: flex;
+  gap: 4px;
+}
+.filterBtnContents ul li {
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.non_active {
+  color: #96989c;
+  background-color: #f3f4f6;
+}
+
+.active {
+  background-color: #386937;
+  color: #fff;
+}
+
+.userInfoCard {
+  width: 100%;
+}
+
+.cardsList {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.userInfoCards {
+  display: flex;
+  flex-direction: column;
+}
+
+.userInfoCard > p {
+  color: #66686f;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+
+.userInfoCards > span {
+  color: #66686f;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+
+.userBasicInfoBox {
+  width: 100%;
+}
+
+.userBasicInfoBoxWrap {
+  width: 100%;
+  background-color: #f3f4f6;
+  border-radius: 12px;
+}
+
+.userBasicInfoBoxWrap ul {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.userBasicInfoBoxWrap ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userBasicInfoBoxWrap ul li p {
+  color: #1b1e28;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: right;
+}
+
+.userBasicInfoBoxWrap ul li span {
+  color: #66686f;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+
+.userPayInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.userPayInfo > p {
+  color: #66686f;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  margin-bottom: 8px;
+  margin-top: 20px;
+}
+
+.cardLinks {
+  background-color: #f3f4f6;
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 12px;
+  aspect-ratio: 1 / 1;
+}
+
+.cardLinks img {
+  margin: 0 auto;
+}
+
+.cardLinks p {
+  color: #66686f;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 20px;
+  line-height: 110%;
+  text-align: center;
+}

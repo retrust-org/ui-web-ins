@@ -1,0 +1,151 @@
+/* searchModal.module.css */
+.modal_container {
+  height: 420px;
+}
+
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.title {
+  color: #353535;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  background: white;
+  z-index: 10;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.close_button {
+  cursor: pointer;
+}
+
+.search_container {
+  border-radius: 8px;
+  margin-bottom: 12px;
+  padding: 12px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: transparent;
+  border: 1.5px solid #0e98f6;
+  pointer-events: auto;
+  z-index: 5;
+}
+
+.search_container .search_input {
+  border: none !important;
+  outline: none !important;
+}
+
+.search_active {
+  border: 1.5px solid #386937;
+}
+.search_active_hasDeparted {
+  border: 1.5px solid #0e98f6;
+}
+
+.search_input {
+  font-size: 14px;
+  padding: 6px 8%;
+  outline: none !important;
+  background-color: transparent !important;
+  background: transparent !important;
+  width: 100%;
+  border: none !important;
+  cursor: text;
+  pointer-events: auto;
+  z-index: 10;
+  position: relative;
+  box-shadow: none !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Tab 포커스 시 border와 outline 제거 */
+.search_input:focus {
+  outline: none !important;
+  border: none !important;
+  background-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.delete_button {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 8px;
+}
+
+.search_icon_container {
+  display: flex;
+}
+
+.search_icon {
+  position: absolute;
+  cursor: pointer;
+  top: 30%;
+  right: 90%;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.results_container {
+  border-radius: 8px;
+  max-height: 250px;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.results_container::-webkit-scrollbar {
+  display: none;
+}
+
+.result_item {
+  padding: 6px;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #1b1e28;
+  font-weight: 500;
+  cursor: pointer;
+  pointer-events: auto;
+  user-select: none;
+  border: 1.5px solid transparent;
+  border-radius: 8px;
+  transition: border-color 0.2s ease;
+}
+
+.result_item:hover,
+.result_item:focus {
+  background-color: transparent;
+  border: 1.5px solid #0e98f6;
+  outline: none;
+}
+
+.result_item[aria-selected="true"],
+.highlighted {
+  background-color: #e3f2fd;
+  outline: 2px solid #386937;
+}
+
+/* aria-selected="false" 상태에서도 클릭 가능하도록 보장 */
+.result_item[aria-selected="false"] {
+  pointer-events: auto;
+  cursor: pointer;
+}

@@ -1,0 +1,169 @@
+/* claimFAQ.module.css */
+.pageContainer {
+  width: 100%;
+  padding: 20px;
+}
+
+.contentWrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.FAQfilterBtn {
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.FAQfilterBtn ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.FAQfilterBtn ul li {
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #c5c5c5;
+}
+
+.FAQfilterBtn li.active {
+  background-color: #7895fc;
+  color: white;
+  transform: scale(1.02);
+}
+
+.FAQfilterBtn li:hover:not(.active) {
+  background-color: #e8e8e8;
+}
+
+.faqList ul {
+  list-style: none;
+  padding: 0;
+}
+
+.faqList ul li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.faqList ul li:nth-child(1) {
+  border-top: 1px solid #eee;
+}
+
+.faqItem {
+  border-bottom: 1px solid #eee;
+  padding: 20px 0;
+}
+
+.faqQuestion {
+  cursor: pointer;
+  padding-right: 16px;
+}
+
+.questionContent {
+  display: flex;
+  width: 100%;
+  align-items: start;
+}
+
+.questionContent span {
+  text-align: start;
+}
+
+.qMark {
+  color: #666;
+  min-width: 20px;
+  margin-left: 20px;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.questionText {
+  flex: 1;
+  color: #1b1e28;
+  line-height: 1.3;
+  font-size: 16px;
+  white-space: pre-line;
+}
+
+.faqAnswer {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s ease-out;
+}
+
+.faqAnswer.show {
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.answerContent {
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 14px;
+  padding: 0 40px;
+}
+
+.arrowIcon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  transition: transform 0.1s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+/* 영상 컨테이너 스타일 */
+.videoContainer {
+  margin: 10px 0;
+}
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 비율 */
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+  .videoWrapper {
+    padding-bottom: 56.25%;
+  }
+  
+  .FAQfilterBtn li {
+    font-size: 14px;
+  }
+  
+  .questionText {
+    font-size: 14px;
+  }
+}

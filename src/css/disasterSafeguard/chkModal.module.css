@@ -1,0 +1,96 @@
+/* 두번째 모달창 */
+.modalSection {
+  width: 100%;
+  padding: 20px 22px;
+}
+
+.closeButton {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.closeButton img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.modalTitle {
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.modalText {
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+.modalText p:nth-child(3) {
+  color: #353535;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+  margin-bottom: 30px;
+}
+
+.modalText_2nd {
+  padding: 0 14px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modalText_2nd p:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.modalText_2nd p {
+  color: #353535;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.modalText_2nd p span {
+  color: #353535;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  text-decoration-line: underline;
+  text-underline-position: from-font;
+}
+
+.matching {
+  color: #386937;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.32px;
+}
+
+.confirmButton {
+  background-color: #386937;
+  color: white;
+  text-align: center;
+  padding: 1.1rem;
+  width: 100%;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 16px;
+  margin-top: 16px;
+}

@@ -1,0 +1,259 @@
+.acceptSection {
+  width: 100%;
+  padding-bottom: 100px;
+}
+.sectionWrap {
+  width: 100%;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.acceptSection h2 {
+  width: 100%;
+  color: #050505;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 26px;
+}
+
+.acceptSection_Title {
+  width: 100%;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+.acceptSection_Title p {
+  font-weight: 600;
+  font-size: 16px;
+  color: #1b1e28;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.acceptSection_Title span {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  background-color: #386937;
+  border-radius: 100%;
+  color: #fff;
+}
+
+.accidentDate {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.accidentDate p,
+.accidentDetails p {
+  color: #66686f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.textArea {
+  width: 100%;
+}
+
+.textAreaWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.customTextarea {
+  width: 100%;
+  height: 200px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #1b1e28;
+  font-style: normal;
+  padding: 16px;
+  background-color: #f3f4f6;
+  border-radius: 12px;
+  font-size: 14px;
+  border: none;
+  resize: none; /* 크기를 고정 */
+}
+.customTextarea::-webkit-scrollbar {
+  display: none; /* 웹킷 브라우저에서 스크롤바 숨기기 */
+}
+
+.customTextarea {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.textCount {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.currentCount {
+  color: #1b1e28;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+.slash {
+  font-size: 12px;
+  line-height: 16px;
+  padding: 0 2px;
+  color: #b8b9bc;
+}
+
+.quotientCount {
+  color: #b8b9bc;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.customTextarea:focus {
+  outline: none;
+  border: 2px solid #386937;
+}
+
+.contentForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.styledLabel {
+  color: #66686f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+
+/* 원본 CSS에서 가져온 스타일 */
+.escrowContents {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.escrowContents_span {
+  color: #66686f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+}
+
+.accountList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.relationshipContents {
+  width: 100%;
+}
+
+.selectRelationShip {
+  background-color: #f3f4f6;
+  border-radius: 12px;
+}
+
+.selectRelationTitle {
+  padding: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selectedRelation {
+  font-size: 14px;
+  color: #1b1e28;
+  font-weight: 400;
+}
+
+.defaultRelation {
+  font-size: 14px;
+  color: #96989c;
+  font-weight: 400;
+}
+
+.boundary {
+  background-color: #e5e7eb;
+  height: 1px;
+  width: 100%;
+}
+
+.relationOptions {
+  max-height: 0;
+  overflow-y: scroll;
+}
+
+.relationOptions.active {
+  max-height: 200px;
+  padding-bottom: 20px;
+}
+
+.relationOptionItem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.relationOptionItem span {
+  padding: 20px 16px;
+  width: 100%;
+  text-align: left;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.custominput {
+  width: 100%;
+}
+
+.selectBankInput {
+  width: 100%;
+  cursor: pointer;
+}
+
+.accidentDetails {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .sectionWrap {
+    margin-top: 20px;
+  }
+}

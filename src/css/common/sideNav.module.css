@@ -1,0 +1,218 @@
+/* SideNav 전용 CSS - 완전히 새로운 방식 */
+
+.sideNavContainer {
+  width: 30%;
+  margin-bottom: 3px;
+}
+
+/* 오버레이 */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeIn 0.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* 사이드 네비게이션 래퍼 - 위에서 아래로 나오는 방식 */
+.sideNavWrapper {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100%);
+  height: 100vh;
+  width: 100%;
+  max-width: 440px;
+  z-index: 1002;
+  transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 0;
+}
+
+/* 반응형 처리 */
+@media screen and (max-width: 500px) {
+  .sideNavWrapper {
+    max-width: 100%;
+  }
+  .sideNavContainer img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.sideNavOpen {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+.sideNavClosed {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 0;
+}
+
+/* 네비게이션 컨테이너 */
+.navContainer {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: white;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.15);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 네비게이션 헤더 */
+.navHeader {
+  width: 100%;
+  background: #328430;
+  position: relative;
+  flex-shrink: 0;
+  padding: 14px;
+}
+
+.navHeaderWrap {
+  padding: 30px 12px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navHeaderWrap img {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.HeadTitle h2 {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px; /* 91.667% */
+  margin: 0 0 8px 0;
+}
+
+.HeadTitle p {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 137.5% */
+}
+
+/* 네비게이션 컨텐츠 */
+.navContents {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* 네비게이션 리스트 */
+.navList {
+  width: 100%;
+  max-width: 440px;
+}
+
+.navList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 메뉴 아이템 */
+.menuItem {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.menuHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: background-color 0.2s ease;
+  text-align: left;
+}
+
+.menuTitle {
+  flex: 1;
+}
+
+.menuTitle h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 4px 0;
+}
+
+.menuTitle p {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* 메뉴 아이콘 */
+.menuIcon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 12px;
+}
+
+.menuIconRotated {
+  transform: rotate(180deg);
+}
+
+/* 서브메뉴 - 부드러운 애니메이션 */
+.subMenu {
+  overflow: hidden;
+  transition: max-height 0.25s ease-out, opacity 0.2s ease-out;
+  background: #f9fafb;
+}
+
+.subMenuClosed {
+  max-height: 0;
+  opacity: 0;
+}
+
+.subMenuOpen {
+  max-height: 400px;
+  opacity: 1;
+}
+
+.subMenuContent {
+  border-top: 1px solid #e5e7eb;
+}
+
+.subMenuItem {
+  display: block;
+  width: 100%;
+  padding: 14px 32px;
+  text-align: left;
+  font-size: 14px;
+  color: #374151;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.subMenuItem:last-child {
+  border-bottom: none;
+}

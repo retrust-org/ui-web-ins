@@ -1,0 +1,207 @@
+/* src/css/certificate/index.module.css */
+.certificateContainer {
+  margin: 0 auto;
+  padding: 16px;
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+.certificateContainer h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1a73e8;
+  margin-bottom: 12px;
+}
+
+.certificateContainer p {
+  color: #5f6368;
+  font-size: 15px;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.formGroup {
+  margin-bottom: 24px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #202124;
+  font-size: 14px;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  background-color: #f8f9fa;
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: #1a73e8;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+}
+
+.errorMessage {
+  color: #d93025;
+  background-color: #fce8e6;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.errorMessage span {
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.submitButton {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.submitButton:hover {
+  background-color: #1765cc;
+}
+
+.submitButton:disabled {
+  background-color: #dadce0;
+  color: #9aa0a6;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.resultContainer {
+  margin-top: 24px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  padding: 16px;
+}
+
+.successMessage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.successMessage h2 {
+  color: #1a73e8;
+  font-size: 18px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.pdfActions {
+  display: flex;
+  gap: 8px;
+}
+
+.viewButton {
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  transition: background-color 0.2s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+.viewButton:hover {
+  background-color: #1765cc;
+}
+
+.downloadButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.downloadButton:hover {
+  background-color: #45a049;
+}
+
+.pdfContainer {
+  width: 100%;
+}
+
+.pdfFrame {
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.loadingMessage {
+  color: #666;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .certificateContainer {
+    padding: 12px;
+  }
+
+  .pdfFrame {
+    height: 400px;
+  }
+
+  .formGroup input {
+    font-size: 15px;
+  }
+
+  .successMessage {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .pdfActions {
+    width: 100%;
+  }
+
+  .viewButton,
+  .downloadButton {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+  }
+}

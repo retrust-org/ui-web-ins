@@ -1,0 +1,180 @@
+/* Button.module.css */
+* {
+  box-sizing: border-box;
+}
+
+.fixedWrapper {
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 440px;
+  z-index: 10;
+}
+
+.floatingContainer {
+  position: absolute;
+  bottom: 80px;
+  right: 2%;
+  z-index: 49;
+}
+
+.floatingImage {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: contain;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+  background-color: #f9f9f9;
+  aspect-ratio: 1 / 1;
+  transition: transform ease-in-out;
+  flex-shrink: 0;
+  
+}
+
+.coverfloating{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: contain;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+  background-color: #f9f9f9;
+  aspect-ratio: 1 / 1;
+  transition: transform ease-in-out;
+  flex-shrink: 0;
+}
+
+.buttonContainer {
+  width: 100%;
+  background: linear-gradient(
+    0deg,
+    #fff 0%,
+    #fff 85%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  padding: 20px 12px 14px;
+  overflow: hidden;
+}
+
+.buttonContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.alignCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 8px;
+}
+
+.mainButton {
+  width: 100%;
+  position: relative;
+}
+
+.buttonStyle {
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  padding: 1.1rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 15px;
+  line-height: 1.5;
+  background-color: #386937;
+}
+
+.buttonStyle:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* LiteButton styles */
+.liteButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  background: #d9e6d9;
+  border-radius: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  min-width: 0;
+  margin-bottom: 8px;
+  width: fit-content;
+  z-index: 400;
+}
+
+.liteButton p {
+  color: #386937;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 16px;
+  margin: 0;
+}
+
+/* 작은 화면 대응 */
+@media screen and (max-width: 320px) {
+  .buttonContainer {
+    padding: 16px 8px 12px;
+  }
+
+  .buttonStyle {
+    padding: 0.75rem;
+    font-size: 14px;
+  }
+
+  .liteButton {
+    padding: 4px 6px;
+  }
+
+  .liteButton p {
+    font-size: 10px;
+  }
+}
+
+/* 태블릿/데스크톱 */
+@media screen and (min-width: 375px) {
+  .buttonContainer {
+    padding: 30px 16px 14px;
+  }
+
+  .buttonStyle {
+    padding: 1rem;
+    font-size: 16px;
+  }
+
+  .liteButton {
+    padding: 6px 12px;
+  }
+
+  .liteButton p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .fixedWrapper {
+    max-width: 440px;
+  }
+
+  .buttonStyle {
+    font-size: 18px;
+  }
+}
+
+.selected {
+  border: 1px solid #386937;
+}
+
+.selected.departed {
+  border: 1px solid #0e98f6;
+}

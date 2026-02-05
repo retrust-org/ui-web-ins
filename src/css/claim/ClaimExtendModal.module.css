@@ -1,0 +1,66 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 0.75rem;
+}
+
+.title {
+  color: #1B1E28;
+  font-size: 22px;
+}
+
+.closeButton {
+  cursor: pointer;
+}
+
+.contentContainer {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.description {
+  color: #66686F;
+  font-size: 14px;
+}
+
+.optionsContainer {
+  width: 100%;
+  padding-bottom: 80px;
+}
+
+.optionsList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.optionItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 16px 12px;
+  border-radius: 0.75rem;
+  border: 1px solid;
+}
+
+.selectedOption {
+  border-color: #386937;
+  color: #386937;
+}
+
+.unselectedOption {
+  border-color: #E8E9EA;
+}
+
+.optionText {
+  color: #66686F;
+  font-size: 16px;
+}
+
+.buttonContainer {
+  z-index: 200;
+}

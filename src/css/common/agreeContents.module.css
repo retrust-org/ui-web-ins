@@ -1,0 +1,19 @@
+.agreeContentsLayout {
+    height: 100%;
+    padding: 0px 20px;
+}
+
+.agreeIContentsLayout {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.h3_Title {
+    color: #1b1e28;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 120% */
+}

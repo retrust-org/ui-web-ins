@@ -1,0 +1,96 @@
+/* errorModal.module.css */
+.contents {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.imageWrap {
+  width: 100%;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.imageWrap img {
+  width: 100px;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.buttonWrap {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.confirmButton {
+  background-color: #386537;
+  color: white;
+  width: 100%;
+  padding: 14px 0;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+
+.cancelButton {
+  background-color: #ebf0eb;
+  color: #386537;
+  width: 100%;
+  padding: 14px 0;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+
+.title {
+  color: #1b1e28;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.subTitle {
+  color: var(--Gray-Gray-200, #96989c);
+  text-align: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+}
+
+.commonX {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+@media screen and (max-width: 768px) {
+  .confirmButton,
+  .cancelButton {
+    padding: 12px 0;
+  }
+
+  .imageWrap {
+    width: 30%;
+  }
+  .subTitle {
+    font-size: 12px;
+  }
+}

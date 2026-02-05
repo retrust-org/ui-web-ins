@@ -1,0 +1,107 @@
+.SelectedpriceContents {
+  width: 100%;
+  margin-top: 60px;
+  padding-bottom: 90px;
+}
+
+@media screen and (max-width: 768px) {
+  .SelectedpriceContents {
+    margin-top: 40px;
+  }
+}
+
+.SelectedpriceContentsWrap {
+  width: 100%;
+  padding: 0 4%;
+}
+
+.SelectedpriceContentsWrap h2 {
+  color: #050505;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 26px;
+}
+
+.planFilterBtn {
+  width: 100%;
+}
+
+.planFilterBtn ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  background: #e7f0ea;
+  margin-bottom: 16px;
+  padding: 8px 10px;
+}
+
+.planFilterBtn ul li {
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.planFilterBtn ul li.active {
+  background-color: #fff;
+}
+
+.priceContainer {
+  width: 100%;
+}
+
+.priceSection {
+  width: 100%;
+  padding: 30px 20px;
+  border-radius: 30px;
+  background: #f6f6f6;
+}
+
+.selectedInputContents {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.rangeInputWrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rangeInputWrap p {
+  color: #4a4a4a;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.rangeInputWrap ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+  padding-left: 4px;
+}
+
+.rangeInputWrap ul li {
+  color: #4a4a4a;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+}

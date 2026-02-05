@@ -1,0 +1,92 @@
+/* 휴대폰 로그인 시작 */
+.phoneLoginBtn {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #000;
+  border-radius: 4px;
+  padding: 19.5px 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.phoneLoginBtn img {
+  position: absolute;
+  left: 20px;
+}
+
+.phoneLoginBtn p {
+  color: #000;
+  font-feature-settings: "pcap" on;
+  width: 100%;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  text-align: center;
+}
+
+.errorMessage {
+  color: #ef4444;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+
+@media screen and (max-width: 360px) {
+  .phoneLoginBtn p {
+    font-size: 0.75rem;
+  }
+}
+/* 휴대폰 로그인 끝 */
+
+/*  클립 로그인 시작 */
+
+.ClipLoginBtn {
+  width: 100%;
+  cursor: pointer;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  padding: 19.5px 20px;
+  position: relative;
+  background-color: #216fea;
+}
+
+.ClipLoginBtn img {
+  position: absolute;
+  left: 20px;
+}
+
+.ClipLoginBtn p {
+  color: #fff;
+  font-feature-settings: "pcap" on;
+  width: 100%;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  text-align: center;
+}
+
+.errorMessage {
+  color: #ef4444;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+
+@media screen and (max-width: 360px) {
+  .ClipLoginBtn p {
+    font-size: 0.75rem;
+  }
+}
+
+/*  클립 로그인 끝 */

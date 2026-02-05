@@ -1,0 +1,190 @@
+.container {
+  width: 100%;
+}
+.formSection {
+  width: 100%;
+  padding: 0 7%;
+  margin-top: 40px;
+}
+
+.formSection h2 {
+  color: #050505;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+
+.formContents {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formContents input {
+  padding: 20px 16px;
+  border-radius: 16px;
+  outline: none;
+  border: 2px solid #e2e2e2;
+}
+
+.formContents input:focus {
+  border: 2px solid #386937;
+  box-shadow: 0px 3px 8.8px 0px rgba(56, 105, 55, 0.4);
+  outline: none;
+}
+
+.optionType {
+  width: 100%;
+}
+
+.optionType ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.optionType ul li {
+  width: 100%;
+  text-align: center;
+  border-radius: 16px;
+  border: 2px solid #e2e2e2;
+  padding: 18px 0;
+  color: #96989c;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  cursor: pointer;
+}
+
+.optionType ul li.active {
+  border: 2px solid #386937;
+  box-shadow: 0px 3px 8.8px 0px rgba(56, 105, 55, 0.4);
+  color: #313131;
+  font-weight: 600;
+}
+
+.optionMenu {
+  width: 100%;
+  cursor: pointer;
+}
+.optionMenuList {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 18px;
+  border-radius: 16px;
+  border: 2px solid #e2e2e2;
+  align-items: center;
+}
+.optionMenuList .selected {
+  color: #313131;
+  font-weight: 600;
+}
+
+.optionMenuList p {
+  color: #96989c;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.4px;
+}
+
+/* 기존 CSS 코드 이후에 추가 */
+
+/* 모바일 반응형 스타일 (768px 이하) */
+@media screen and (max-width: 768px) {
+  .formSection {
+    padding: 0 5%;
+    margin-top: 24px;
+  }
+
+  .formSection h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .formContents {
+    gap: 20px;
+  }
+
+  .formContents input {
+    padding: 16px 14px;
+    border-radius: 14px;
+    font-size: 15px;
+  }
+
+  .optionType ul li {
+    padding: 15px 0;
+    font-size: 15px;
+    border-radius: 14px;
+  }
+
+  .optionMenuList {
+    padding: 16px 14px;
+    border-radius: 14px;
+  }
+
+  .optionMenuList p {
+    font-size: 15px;
+  }
+
+  .optionMenuList img {
+    width: 18px;
+    height: auto;
+  }
+}
+
+/* 작은 모바일 디바이스 (344px 이하) */
+@media screen and (max-width: 344px) {
+  .formSection {
+    padding: 0 4%;
+    margin-top: 20px;
+  }
+
+  .formSection h2 {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
+  .formContents {
+    gap: 16px;
+  }
+
+  .formContents input {
+    padding: 14px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+  }
+
+  .optionType ul {
+    gap: 8px;
+  }
+
+  .optionType ul li {
+    padding: 12px 0;
+    font-size: 14px;
+    border-radius: 12px;
+  }
+
+  .optionMenuList {
+    padding: 14px 12px;
+    border-radius: 12px;
+  }
+
+  .optionMenuList p {
+    font-size: 14px;
+  }
+
+  .optionMenuList img {
+    width: 16px;
+    height: auto;
+  }
+}

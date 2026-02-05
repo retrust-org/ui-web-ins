@@ -1,0 +1,72 @@
+/* ClaimRevacationSlide.module.css */
+.sliderContainer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.sliderContainer {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.slideContents {
+  width: 100%;
+  height: 100%;
+  background-color: #ebf0eb;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.slideContents h3 {
+  color: #1b1e28;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.boundaryWrap {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.boundary {
+  height: 1px;
+  background-color: #c1d1c1;
+}
+
+.userInfoConents {
+  width: 100%;
+}
+
+.userInfoConents ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.userInfoConents ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.userInfoConents ul li span {
+  color: #66686f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.userInfoConents ul li p {
+  color: #1b1e28;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}

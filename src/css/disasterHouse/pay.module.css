@@ -1,0 +1,415 @@
+/* Container 스타일 */
+.payContainer {
+  width: 100%;
+}
+
+/* Section 스타일 */
+.paySection {
+  padding: 0 4%;
+  padding-bottom: 100px;
+  margin-top: 20px;
+}
+
+/* 제목 스타일 */
+.paySection h2 {
+  color: #4a4a4a;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+/* 결제수단 선택 탭 */
+.paymentMethodTabs {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.paymentMethodTabs ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: transparent;
+  padding: 0;
+  gap: 24px;
+}
+
+.paymentMethodTabs ul li {
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: fit-content;
+  padding: 12px 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.paymentMethodTabs ul li.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #386937;
+}
+
+/* 결제 정보 카드 */
+.paymentCard {
+  width: 100%;
+  padding: 0 18px;
+}
+
+.paymentCard h3 {
+  color: #000;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+/* 입력 필드 섹션 */
+.inputSection {
+  margin-bottom: 12px;
+}
+
+.inputSection:last-child {
+  margin-bottom: 0;
+}
+
+.inputLabel {
+  color: #676767;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
+}
+
+/* 예금주명 입력 래퍼 */
+.cardHolderWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  padding: 12px 16px;
+}
+
+.cardHolderInput {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 4px;
+  outline: none;
+  color: #96989c;
+}
+
+.cardHolderInput::placeholder {
+  color: #d9d9d9;
+  font-weight: 500;
+}
+
+/* 카드번호 입력 래퍼 */
+.cardNumberWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  padding: 12px 16px;
+}
+
+.cardInputsContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.cardInput {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  padding: 4px;
+  outline: none;
+  color: #96989c;
+  min-width: 40px;
+}
+
+.cardInput:empty:before {
+  content: attr(data-placeholder);
+  color: #d9d9d9;
+  font-weight: 500;
+}
+
+/* 유효기간 입력 래퍼 */
+.expiryWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  padding: 10px 16px;
+  width: 100%;
+}
+
+.expiryInputsContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.expiryInput {
+  width: 50px;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  padding: 4px;
+  outline: none;
+  color: #96989c;
+}
+
+.expiryInput:empty:before {
+  content: attr(data-placeholder);
+  color: #d9d9d9;
+  font-weight: 500;
+}
+
+.expiryWrapper .divider {
+  color: #96989c;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* 은행 선택 래퍼 */
+.bankSelectWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  padding: 12px 16px;
+}
+
+.bankSelectButton {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 4px;
+  text-align: left;
+  outline: none;
+  color: #96989c;
+  cursor: pointer;
+}
+
+.bankSelectButton:empty,
+.bankSelectButton:not(:empty) {
+  color: #96989c;
+}
+
+/* 계좌번호 입력 래퍼 */
+.accountNumberWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  padding: 16px;
+}
+
+/* 계좌번호 입력 필드 내부 스타일 오버라이드 */
+.accountNumberWrapper :global(.customInput_borderedInputBox__wM371),
+.accountNumberWrapper :global([class*="borderedInputBox"]) {
+  border: none !important;
+  padding: 0px !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.accountNumberWrapper :global(.customInput_borderedInput__YrSHj),
+.accountNumberWrapper :global(.customInput_borderedInput__1cwnB),
+.accountNumberWrapper :global([class*="borderedInput"]) {
+  color: #96989c !important;
+  font-size: 18px !important;
+  font-weight: 500;
+}
+
+.accountNumberWrapper :global(.customInput_borderedInput__YrSHj)::placeholder,
+.accountNumberWrapper :global(.customInput_borderedInput__1cwnB)::placeholder,
+.accountNumberWrapper :global([class*="borderedInput"])::placeholder {
+  font-size: 18px !important;
+  color: #96989c !important;
+}
+
+/* 계좌이체 안내 */
+.bankTransferNotice {
+  width: 100%;
+  padding: 24px 20px;
+  background-color: #f3f4f6;
+  border-radius: 17px;
+  text-align: center;
+}
+
+.bankTransferNotice p {
+  color: #4a4a4a;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* 에러 메시지 */
+.errorMessage {
+  color: #ef4444;
+  background: #fef2f2;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-top: 16px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* PC 사이즈 대응 */
+@media (min-width: 768px) {
+  .paySection {
+    padding: 0 6%;
+    max-width: 600px;
+    margin: 20px auto 0;
+  }
+}
+
+/* 모바일 사이즈 대응 */
+@media (max-width: 767px) {
+  .paymentCard {
+    padding: 0 8px;
+  }
+
+  .paymentCard h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 32px;
+  }
+
+  .inputLabel {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  /* 예금주명 */
+  .cardHolderWrapper {
+    gap: 8px;
+    padding: 10px 12px;
+  }
+
+  .cardHolderInput {
+    font-size: 14px;
+    min-width: 0;
+  }
+
+  .cardHolderInput::placeholder {
+    font-size: 13px;
+  }
+
+  /* 카드번호 */
+  .cardNumberWrapper {
+    gap: 6px;
+    padding: 10px 10px;
+  }
+
+  .cardInputsContainer {
+    gap: 2px;
+    min-width: 0;
+  }
+
+  .cardInput {
+    font-size: 13px;
+    padding: 4px 1px;
+    min-width: 0;
+  }
+
+  .cardInput::placeholder {
+    font-size: 12px;
+  }
+
+  .cardInput:empty:before {
+    font-size: 12px;
+  }
+
+  /* 유효기간 */
+  .expiryWrapper {
+    gap: 6px;
+    padding: 10px 10px;
+  }
+
+  .expiryInputsContainer {
+    gap: 6px;
+    min-width: 0;
+  }
+
+  .expiryInput {
+    width: 36px;
+    font-size: 14px;
+  }
+
+  .expiryInput::placeholder {
+    font-size: 13px;
+  }
+
+  .expiryInput:empty:before {
+    font-size: 13px;
+  }
+
+  .expiryWrapper .divider {
+    font-size: 14px;
+  }
+
+  /* 은행 선택 */
+  .bankSelectWrapper {
+    gap: 8px;
+    padding: 10px 12px;
+  }
+
+  .bankSelectButton {
+    font-size: 14px;
+  }
+
+  /* 계좌번호 */
+  .accountNumberWrapper {
+    gap: 8px;
+    padding: 10px 12px;
+  }
+
+  .accountNumberWrapper :global(.customInput_borderedInput__YrSHj),
+  .accountNumberWrapper :global(.customInput_borderedInput__1cwnB),
+  .accountNumberWrapper :global([class*="borderedInput"]) {
+    font-size: 14px !important;
+  }
+
+  .accountNumberWrapper :global(.customInput_borderedInput__YrSHj)::placeholder,
+  .accountNumberWrapper :global(.customInput_borderedInput__1cwnB)::placeholder,
+  .accountNumberWrapper :global([class*="borderedInput"])::placeholder {
+    font-size: 13px !important;
+  }
+}

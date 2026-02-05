@@ -1,0 +1,75 @@
+.ContentsSection {
+  width: 100%;
+  background-color: #f6f9f7;
+}
+.DepartedContentsSection {
+  width: 100%;
+  background: #e9f8ff;
+}
+
+.imgBoxSection {
+  width: 100%;
+}
+
+.imageContentsWrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 28px auto 0;
+  padding: 0 4%;
+}
+
+.textList {
+  width: 100%;
+}
+
+.rewardTitle {
+  color: var(--Gray-Gray-200, #96989c);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.textList img {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.textList ul {
+  width: 100%;
+  padding: 0 6%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 2rem;
+}
+
+.textList ul li {
+  color: #848484;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.015rem;
+}
+
+.cite {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 1.05rem */
+  margin-top: 2.5rem;
+  color: #96989c;
+  padding-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .imageContentsWrap {
+    padding: 0 3%;
+  }
+}

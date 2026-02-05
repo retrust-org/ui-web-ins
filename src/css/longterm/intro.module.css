@@ -1,0 +1,506 @@
+/* 리셋 및 기본 스타일 */
+.section {
+  width: 100%;
+  background: linear-gradient(180deg, #fff 0%, #c4f9d3 40.85%);
+  cursor: default;
+  user-select: none;
+  padding-bottom: 60px;
+}
+
+.container {
+  width: 100%;
+  padding: 0 4% 40px 4%;
+  box-sizing: border-box;
+}
+
+/* 메인 섹션 */
+.main {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.imagesWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main h1,
+.main h1 span {
+  font-size: 1.8rem;
+  width: 100%;
+  position: relative;
+  z-index: 4;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.5px;
+  white-space: nowrap;
+  color: black;
+}
+
+.main h1:before {
+  background-color: #f8ffdb;
+  bottom: 5px;
+  content: "";
+  height: 16px;
+  position: absolute;
+  width: 70%;
+  z-index: -1;
+}
+
+.main img {
+  width: 120%;
+  height: auto;
+  display: block;
+}
+
+/* 상품 섹션 */
+.prouductwrap {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.prouduct {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 30px;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #676767;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.prouduct li {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.prouduct li p {
+  margin: 0;
+  color: #676767;
+  font-family: "Noto Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.42px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+/* 타겟 섹션 */
+.targetwrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 12px;
+}
+
+.targetwrap h2 {
+  color: #2b2b2b;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: -0.18px;
+}
+
+.target,
+.target img {
+  align-items: center;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  text-align: center;
+  width: 97%;
+  margin: 0 auto;
+}
+
+/* 보증 섹션 */
+.guaranteewrap {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+.guarantee {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.guaranteewrap span {
+  width: fit-content;
+  color: #3b3c36;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 4.5px 12px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.guarantee div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plus {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* 포인트 섹션 */
+.pointwrap {
+  position: relative;
+  padding-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  padding-bottom: 2rem;
+  margin-top: 1.8rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.spoint {
+  position: absolute;
+  z-index: 6;
+  top: -2%;
+  left: 4%;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 8px 10px;
+  border-radius: 16px;
+  background: #006244;
+  color: #fff;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+}
+
+.pointwrap h2 {
+  width: 100%;
+  font-size: 1.2rem;
+  color: #3b3c36;
+  text-align: center;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1px;
+}
+
+/* 서비스 섹션 */
+.service {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.service p {
+  color: #006244;
+  font-weight: 700;
+  margin: 0;
+}
+
+.svpoint {
+  display: flex;
+}
+
+/* 포인트 1, 2 공통 스타일 */
+.point1,
+.point2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.point1 span,
+.point2 span {
+  color: #3b3c36;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 16px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.point1 span:nth-child(1),
+.point2 span:nth-child(1) {
+  background: #cce8d7;
+}
+
+.rsv {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* 포인트박스 스타일 */
+.pointbox {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.pointbox ul {
+  display: flex;
+  width: 100%;
+  padding: 0 1.6rem;
+  margin-top: 1rem;
+  justify-content: center;
+  gap: 1.8rem;
+  list-style: none;
+}
+
+.point1 .pointbox li,
+.point2 .pointbox li {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.point1 .pointbox li img,
+.point2 .pointbox li img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 12.4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.buttonWrap {
+  padding: 0 20px;
+  width: 100%;
+}
+
+.introBtn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 20px);
+  max-width: calc(440px - 34px);
+  z-index: 50;
+  color: white;
+  font-weight: bold;
+  padding: 1.35rem;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1.5;
+  background-color: #386937;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.goodPoint {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 16px;
+  background: #ecfaef;
+  padding: 40px 16px;
+  margin-top: 34px;
+}
+
+.goodPointTitle {
+  position: absolute;
+  top: -16px;
+  left: 20px;
+  border-radius: 20px;
+  background: #006244;
+}
+
+.goodPointTitle h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.16px;
+  padding: 8px;
+}
+.articleWrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lineWrap {
+  padding: 24px 0;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(160, 160, 160, 0.4);
+}
+
+.articleWrap span {
+  border-radius: 16px;
+  background: #cce8d7;
+  padding: 5px 10px;
+  color: #3b3c36;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  margin-bottom: 12px;
+}
+
+.articleWrap h3 {
+  color: #3b3c36;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1px;
+  margin-bottom: 14px;
+}
+
+.articleWrap p {
+  margin-top: 14px;
+  color: #9c9c9c;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  margin-bottom: 30px;
+}
+
+.goodPoint cite {
+  color: #a5a5a5;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  margin-top: 30px;
+  display: block; /* 중요: 블록 요소로 만들어 텍스트 정렬이 적용되게 함 */
+  width: 100%; /* 전체 너비 사용 */
+}
+.cite {
+  color: #a5a5a5;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  margin-top: 30px;
+  display: block; /* 중요: 블록 요소로 만들어 텍스트 정렬이 적용되게 함 */
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .introBtn {
+    width: calc(100% - 20px);
+  }
+}
+/* 360px 이하 소형 기기에 대한 반응형 스타일 */
+@media screen and (max-width: 768px) {
+  .headertitle {
+    font-size: 16px;
+  }
+
+  .main h1,
+  .main h1 span {
+    font-size: 1.5rem;
+  }
+
+  .prouduct li p {
+    font-size: 12px;
+  }
+
+  .targetwrap h2 {
+    font-size: 1rem;
+  }
+
+  .guaranteewrap span {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+
+  .pointwrap h2 {
+    font-size: 1rem;
+  }
+
+  .point1 span,
+  .point2 span {
+    font-size: 0.7rem;
+  }
+
+  .spoint {
+    font-size: 0.7rem;
+    padding: 6px 8px;
+  }
+
+  .goodPointTitle h2 {
+    font-size: 14px;
+  }
+
+  .articleWrap span {
+    font-size: 12px;
+  }
+
+  .articleWrap h3 {
+    font-size: 18px;
+  }
+
+  .articleWrap p {
+    font-size: 11px;
+  }
+
+  .goodPoint cite {
+    font-size: 10px;
+  }
+
+  .introBtn {
+    padding: 1.2rem;
+    font-size: 14px;
+  }
+}

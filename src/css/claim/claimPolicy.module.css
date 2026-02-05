@@ -1,0 +1,543 @@
+/* claimPolicy.module.css */
+.pageContainer {
+  width: 100%;
+  padding: 20px;
+}
+
+.contentWrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.description {
+  margin: 16px 0 24px 0;
+  padding: 16px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #7895fc;
+}
+
+.description p {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.policyFilterBtn {
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.policyFilterBtn ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.policyFilterBtn ul li {
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #c5c5c5;
+}
+
+.policyFilterBtn li.active {
+  background-color: #7895fc;
+  color: white;
+  transform: scale(1.02);
+}
+
+.policyFilterBtn li:hover:not(.active) {
+  background-color: #e8e8e8;
+}
+
+.policyList ul {
+  list-style: none;
+  padding: 0;
+}
+
+.policyItem {
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease;
+}
+
+.policyItem:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.policyInfo {
+  margin-bottom: 20px;
+}
+
+.policyTitle h3 {
+  margin: 0 0 8px 0;
+  color: #1b1e28;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.policyNumber {
+  color: #666;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.policyPeriod {
+  margin: 12px 0 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.periodLabel {
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.periodDate {
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.policyStatus {
+  margin-top: 8px;
+}
+
+.statusBadge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.statusBadge.active {
+  background-color: #e7f5e7;
+  color: #2e7d2e;
+}
+
+.statusBadge.inactive {
+  background-color: #fee;
+  color: #c53030;
+}
+
+.downloadSection {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 16px;
+}
+
+.downloadButtons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.downloadBtn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background-color: #e9ecef;
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.downloadBtn:hover:not(:disabled) {
+  background-color: #dee2e6;
+  border-color: #adb5bd;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.downloadBtn:disabled {
+  background-color: #f8f9fa;
+  color: #ced4da;
+  border-color: #e9ecef;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.downloadBtn img {
+  width: 16px;
+  height: 16px;
+  opacity: 0.8;
+  filter: brightness(0) saturate(100%) invert(27%) sepia(8%) saturate(1218%) hue-rotate(201deg) brightness(95%) contrast(86%);
+}
+
+.downloadBtn:disabled img {
+  opacity: 0.4;
+  filter: brightness(0) saturate(100%) invert(75%) sepia(2%) saturate(1012%) hue-rotate(202deg) brightness(91%) contrast(89%);
+}
+
+.downloadBtn span {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.loadingContainer,
+.errorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  color: #666;
+  font-size: 16px;
+}
+
+.errorContainer {
+  color: #c53030;
+}
+
+/* 일반 문의 섹션 */
+.generalInquirySection {
+  background-color: white;
+  border: 2px solid #7895fc;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.generalInquiryTitle {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #7895fc;
+}
+
+.generalInquiryContact {
+  font-size: 18px;
+  font-weight: 800;
+  color: #1b1e28;
+}
+
+/* 모바일 카드형 레이아웃 */
+.policyList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.policyItem {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.policyHeader {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 16px 20px;
+}
+
+.policyInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.infoRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.infoLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  min-width: 80px;
+  flex-shrink: 0;
+}
+
+.infoValue {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1b1e28;
+  line-height: 1.4;
+}
+
+.downloadSection {
+  display: flex;
+  gap: 12px;
+  padding: 20px;
+}
+
+/* 보상 연락처 공통 섹션 */
+.compensationSection {
+  margin-top: 32px;
+  padding: 24px 20px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  border: 1px solid #e9ecef;
+}
+
+.compensationSectionTitle {
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1b1e28;
+  text-align: center;
+  padding-bottom: 12px;
+  border-bottom: 3px solid #7895fc;
+}
+
+.compensationGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.compensationCard {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease;
+}
+
+.compensationCard:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.compensationCardTitle {
+  margin: 0 0 10px 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #7895fc;
+  border-bottom: 2px solid #7895fc;
+  padding-bottom: 6px;
+}
+
+.compensationSubItems {
+  margin: 8px 0 12px 0;
+  padding: 8px 12px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #7895fc;
+}
+
+.compensationSubItems div {
+  font-size: 13px;
+  color: #495057;
+  line-height: 1.4;
+  margin: 2px 0;
+}
+
+.compensationContact {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1b1e28;
+  margin: 4px 0;
+  padding: 2px 0;
+}
+
+.compensationDept {
+  font-size: 13px;
+  font-weight: 500;
+  color: #666;
+  margin: 8px 0 4px 0;
+}
+
+.compensationExtra {
+  font-size: 12px;
+  color: #7895fc;
+  font-weight: 500;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #f1f3f4;
+}
+
+@media screen and (max-width: 768px) {
+  .policyFilterBtn ul {
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+  }
+  
+  .policyFilterBtn li {
+    font-size: 14px;
+    padding: 14px;
+  }
+  
+  .description {
+    margin: 12px 0 20px 0;
+    padding: 12px;
+  }
+  
+  .policyItem {
+    margin-bottom: 12px;
+  }
+  
+  .policyHeader {
+    padding: 14px 16px;
+  }
+  
+  .policyTitle {
+    font-size: 14px;
+  }
+  
+  .policyNumber {
+    font-size: 13px;
+  }
+  
+  .compensationSection {
+    margin-top: 24px;
+    padding: 20px 16px;
+  }
+  
+  .compensationSectionTitle {
+    font-size: 16px;
+  }
+  
+  .compensationGrid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .compensationCard {
+    padding: 14px;
+  }
+  
+  .compensationCardTitle {
+    font-size: 14px;
+  }
+  
+  .generalInquirySection {
+    padding: 16px;
+  }
+  
+  .generalInquiryTitle {
+    font-size: 15px;
+  }
+  
+  .generalInquiryContact {
+    font-size: 17px;
+  }
+  
+  .downloadBtn {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  
+  .downloadBtn img {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .downloadBtn span {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pageContainer {
+    padding: 16px;
+  }
+  
+  .description {
+    margin: 8px 0 16px 0;
+    padding: 10px;
+    font-size: 13px;
+  }
+  
+  .policyItem {
+    margin-bottom: 10px;
+  }
+  
+  .policyHeader {
+    padding: 12px 14px;
+  }
+  
+  .policyTitle {
+    font-size: 13px;
+  }
+  
+  .policyNumber {
+    font-size: 12px;
+  }
+  
+  .policyDetails {
+    padding: 14px;
+  }
+  
+  .dateLabel,
+  .dateValue {
+    font-size: 13px;
+  }
+  
+  .downloadSection {
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+  }
+  
+  .downloadBtn {
+    padding: 12px;
+    font-size: 12px;
+  }
+  
+  .compensationSection {
+    margin-top: 20px;
+    padding: 16px 12px;
+  }
+  
+  .compensationSectionTitle {
+    font-size: 15px;
+  }
+  
+  .compensationCard {
+    padding: 12px;
+  }
+  
+  .compensationCardTitle {
+    font-size: 13px;
+  }
+  
+  .compensationContact {
+    font-size: 14px;
+  }
+  
+  .generalInquirySection {
+    padding: 14px;
+  }
+  
+  .generalInquiryTitle {
+    font-size: 14px;
+  }
+  
+  .generalInquiryContact {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,84 @@
+/* SafetyGuardHeader.module.css */
+.safetyGuardHeaderContainer {
+  width: 100%;
+  padding: 10px 4%;
+}
+
+.safetyGuardHeaderContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.safetyGuardLogoWrapper {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: 30%;
+}
+
+.safetyGuardLogo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.safetyGuardTitleWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  width: 50%;
+}
+
+.safetyGuardTitleWrapper span {
+  color: #4a4a4a;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 125% */
+}
+
+.safetyGuardTitle {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: end;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 30%;
+}
+
+.safetyGuardHeadPhoneWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 20%;
+}
+
+.safetyGuardHeadPhone {
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+  .safetyGuardHeader Container {
+    padding: 12px 4%;
+  }
+
+  .safetyGuardLogo {
+    height: 32px;
+  }
+
+  .safetyGuardTitle {
+    font-size: 14px;
+  }
+
+  .safetyGuardHeadPhone {
+    width: 20px;
+    height: 20px;
+  }
+}

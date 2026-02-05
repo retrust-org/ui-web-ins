@@ -1,0 +1,115 @@
+.Wrapper {
+  width: 100%;
+}
+
+.Wrapper h3 {
+  color: #1b1e28;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33.6px;
+  text-align: left;
+  padding: 0 20px;
+  margin-top: 24px;
+  margin-bottom: 36px;
+}
+
+.section {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.sectionContents {
+  width: 100%;
+}
+.sectionContentsWrap {
+  width: 100%;
+  padding: 20px 16px;
+  background-color: #ebf0eb;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+}
+
+.title {
+  color: #1b1e28;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+}
+
+.boundary {
+  margin-top: 16px;
+  margin-bottom: 12px;
+  background-color: #c1d1c1;
+  height: 1px;
+  width: 100%;
+}
+
+.userInfoListWrap {
+  width: 100%;
+}
+
+.userInfoContents {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.userInfoContents ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.userInfoContents ul li {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.userInfoContents ul li p {
+  color: #66686f;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+.userInfoContents ul li span {
+  color: #1b1e28;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: right;
+}
+
+.PriceConents {
+  width: 100%;
+}
+
+.PriceConentsWrap {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+}
+
+.PriceConentsWrap p {
+  color: #7a9b79;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+}
+
+.PriceConentsWrap span {
+  color: #386937;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: right;
+}

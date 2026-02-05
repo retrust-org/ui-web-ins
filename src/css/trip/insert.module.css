@@ -1,0 +1,364 @@
+.container {
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.containerWrap {
+  padding: 0 4%;
+}
+
+.titltBox {
+  max-width: 100%;
+}
+
+.titltWrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+.title {
+  color: #1b1e28;
+  width: 100%;
+  line-height: 33.6px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.title span {
+  width: 100%;
+  line-height: 33.6px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+/* 여행 정보 선택 영역 */
+.tripSelect {
+  display: flex;
+  flex-direction: column;
+}
+
+.calendars {
+  color: #5c5c5c;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 136.077%;
+  width: 20%;
+  margin-bottom: 4px;
+}
+
+/* 입력 필드 공통 스타일 */
+.inputWrap {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendarBox {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.inputWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.errorMessage {
+  color: #e86565;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-left: 4px;
+}
+
+.InputFlex {
+  display: flex;
+  gap: 9px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.userInpoInputFlex {
+  display: flex;
+  gap: 9px;
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.InputContent {
+  padding: 16px 16px;
+  border-radius: 12px;
+  background-color: #f3f4f6;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  color: #1b1e28;
+  line-height: 24px;
+  border: 1px solid transparent;
+}
+
+.InputContent::placeholder {
+  color: #b8b9bc;
+}
+
+.inputError {
+  outline: 1px solid #e86565;
+}
+
+/* 성별 선택 영역 */
+.sectionGender {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.genderContentsBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.UserInfoBox {
+  display: flex;
+  margin-bottom: 4px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.userInfo {
+  color: #5c5c5c;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 136.077%;
+}
+
+.companionsTotal {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.genderInput {
+  position: relative;
+  background-color: #f3f4f6;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.faCheckStyle {
+  position: absolute;
+  right: 16px;
+  color: #96989c;
+  top: 14px;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.GenderOption {
+  position: absolute;
+  left: 1px;
+  padding: 12px 0;
+  z-index: 100;
+  background-color: #f3f4f6;
+  width: 161px;
+  top: 50px;
+  border-radius: 0 0 12px 12px;
+  border-top: 1px solid #e8e9ea;
+  transition: 2s;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 99%;
+}
+
+.genderBtn {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #1b1e28;
+}
+
+/* 동반자 관련 스타일 */
+.companionCheckicon {
+  position: absolute;
+  right: 16px;
+  top: 14px;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.companionIndex_DeleteBtn {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.companionIndex {
+  color: #66686f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.DeleteBtn {
+  display: flex;
+  padding: 4px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  background-color: #e8e9ea;
+  font-size: 12px;
+}
+
+.AddcopanionButtonWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background-color: #ebf0eb;
+  padding: 10px 16px;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.AddcopanionButton_Text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+/* 캘린더 타이틀 */
+.calendarTtitle {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  color: #1b1e28;
+}
+
+.input::placeholder {
+  color: #b8b9bc;
+}
+
+/* 토글 버튼 컨테이너 */
+.tabContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabContent {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* 토글 버튼 래퍼 */
+.buttonWrap {
+  padding: 0 2%;
+  width: 100%;
+  margin-bottom: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.estimateExplain{
+  font-size: 12px;
+  color: #e86565;
+}
+
+/* 토글 버튼 기본 스타일 */
+.toggleButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 17px 0;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.toggleButton:hover {
+  background-color: #f8f9fa;
+}
+
+.toggleButton p {
+  color: #96989c;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+
+/* 토글 버튼 활성화 상태 */
+.toggleButton.activeToggle {
+  border: 1px solid #31702f;
+  background: #fff;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.toggleButton.activeToggle p {
+  color: #31702f;
+}
+
+.toggleButton.DepartedactiveToggle {
+  border: 1px solid #0e98f6;
+  background: #fff;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.toggleButton.DepartedactiveToggle p {
+  color: #0e98f6;
+}
+
+/* 반응형 디자인 */
+@media screen and (max-width: 768px) {
+  .userInfo {
+    font-size: 14px;
+  }
+
+  .calendars {
+    font-size: 14px;
+  }
+
+  .toggleButton p {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .buttonWrap {
+    padding: 0 1%;
+  }
+}

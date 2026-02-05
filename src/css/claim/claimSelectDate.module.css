@@ -1,0 +1,46 @@
+/* claimSelectDate.module.css */
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 최소 높이를 화면 전체로 설정 */
+  position: relative; /* 상대 위치 설정 */
+}
+
+.container {
+  padding: 0 20px; /* 전체 섹션 양옆 페딩값 20px 적용 */
+  width: 100%;
+  flex: 1; /* 남은 공간을 차지하도록 설정 */
+}
+
+.title {
+  color: var(--Gray-Gray-500, #1b1e28);
+  font-family: Pretendard;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 33.6px */
+  margin-bottom: 16px;
+  margin-top: 32px; /* 헤더와의 간격 추가 */
+}
+
+.calendarContainer {
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.calendarWrapper {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.buttonContainer {
+  width: 100%;
+  padding: 16px 20px;
+  background-color: #fff;
+  position: sticky;
+  bottom: 0;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.05);
+}

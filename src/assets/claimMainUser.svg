@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+<g id="ICON/COMMON/ETC/icon_common_etc_profile">
+<g clip-path="url(#clip0_117_13045)">
+<circle id="Ellipse 260" cx="14" cy="14" r="14" fill="#EBF0EB"/>
+<path id="Rectangle 41036" d="M2 26C2 22.134 5.13401 19 9 19H19C22.866 19 26 22.134 26 26V35H2V26Z" fill="#A3BAA3"/>
+<circle id="Ellipse 261" cx="14" cy="12" r="6" fill="#A3BAA3"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_117_13045">
+<rect width="28" height="28" rx="14" fill="white"/>
+</clipPath>
+</defs>
+</svg>

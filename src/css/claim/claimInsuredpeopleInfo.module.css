@@ -1,0 +1,203 @@
+/* claimInsuredpeopleInfo.module.css */
+
+.claimContainer {
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.section_1 {
+  width: 100%;
+  padding: 0 6%;
+}
+
+.section_1 h1 {
+  color: #1b1e28;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  margin-top: 24px;
+  margin-bottom: 36px;
+}
+
+.section_2 {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.section_2 h1 {
+  color: #1b1e28;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  margin-top: 24px;
+  margin-bottom: 36px;
+}
+
+.sectionContentsWrap {
+  width: 100%;
+}
+
+/* 옵션 선택css 시작 */
+
+.sectionContentsWrap_userSelect {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.sectionContentsWrap_userSelect p {
+  color: #66686f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.sectionContentsWrap_SelectOption {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border-radius: 12px;
+}
+
+.sectionContentsWrap_SelectOption.active {
+  padding-bottom: 10px;
+}
+
+.sectionContentsWrap_SelectOption.nonActive {
+  padding-bottom: 0;
+}
+
+.selectedOption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 16px;
+  cursor: pointer;
+  border-radius: 16px;
+  border: 2px solid #e2e2e2;
+}
+
+.selectedOption p {
+  color: #96989c;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+.flexRow {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.optionsList {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  width: 100%;
+  padding: 0 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.optionsList li {
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.sectionContentsWrap_SelectOption ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sectionContentsWrap_SelectOption ul > li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sectionContentsWrap_SelectOption ul > li p {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  color: #1b1e28;
+}
+
+.sectionContentsWrap_claimSelect {
+  width: 100%;
+  margin-top: 18px;
+}
+
+.sectionContentsWrap_claimSelectOption {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.sectionContentsWrap_claimSelectOption ul {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 10px;
+}
+
+.sectionContentsWrap_claimSelectOption ul li {
+  display: flex;
+  gap: 8px;
+}
+
+.sectionContentsWrap_claimSelectOption ul li p {
+  color: #1b1e28;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+/* 버튼 컨테이너 스타일 */
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+/* 네비게이션 버튼 영역 */
+.navigationButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.backButton,
+.nextButton {
+  flex: 1;
+  max-width: 48%;
+}
+
+.secureInputContainer {
+  margin-top: 16px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+}

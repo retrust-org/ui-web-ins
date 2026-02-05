@@ -1,0 +1,510 @@
+#houseContainer {
+  width: 100%;
+  background: linear-gradient(180deg, #fff 0%, #f7ffc5 100%);
+  padding-bottom: 100px;
+}
+
+.headerWrapping {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.subHeaders {
+  width: 100%;
+  background: #bbe2c7;
+}
+
+.subHeaders ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 6px 0;
+}
+.subHeaders ul li {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 2px 11px;
+  width: fit-content;
+  border-radius: 20px;
+  background: #fbfbfb;
+}
+
+.houseContainerWrap {
+  width: 100%;
+  padding: 0 24px;
+}
+
+.houseMainSection {
+  padding: 40px 0;
+}
+
+.houseTitle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.houseTitleText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.houseTitleText h1 {
+  color: #000;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.44px;
+}
+
+.houseTitleText h1 span {
+  color: #000;
+  text-align: center;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.houseMeritzLogo {
+  align-self: flex-end;
+  margin-top: 16px;
+}
+
+.houseCoverageSection {
+  width: 100%;
+  border-radius: 20px;
+  border: 2.5px solid #1bf4a6;
+  background: linear-gradient(183deg, #fff 9.94%, #ddf8eb 103.25%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 38px 22px;
+}
+
+.houseCoverageContents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.houseCoverageSection .houseCoverageContents h2 {
+  color: #3b3c36;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.26px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.houseCoverageContents p {
+  color: #4a4a4a;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  margin-bottom: 28px;
+}
+
+.houseSupportContents {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 17px;
+  padding: 18px 0;
+}
+
+.houseSupportContents:nth-child(1),
+.houseSupportContents:nth-child(2) {
+  border-bottom: 0.5px solid rgba(148, 148, 148, 0.4);
+}
+
+.houseSupportDetailText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  width: 100%;
+}
+
+.houseSupportDetailText span {
+  color: #707070;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.houseSupportDetailText h3 {
+  color: #030303;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.houseCiteSection {
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(49, 50, 0, 0.12);
+  margin-top: 20px;
+  text-align: center;
+}
+
+.houseCiteSection cite {
+  color: #a6a6a6;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.7px;
+  width: 100%;
+}
+.houseProviderSection {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.houseProviderSection h2 {
+  color: #313200;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.24px;
+}
+
+.houseProviderSection h2 span {
+  color: #313200;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.26px;
+}
+
+.houseProviderSectionImage {
+  width: 100%;
+}
+.houseProviderSectionImage img {
+  margin: 0 auto;
+}
+
+.houseDisasterCoverage {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.houseDisasterCoverage h2 {
+  color: #313200;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.28px;
+}
+
+.houseDisasterCoverage {
+  width: 100%;
+}
+.houseDisasterCoverage h2 {
+  color: #313200;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  margin-bottom: 40px;
+}
+
+.houseCoverageDetail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.houseDetailContents {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.houseDetailContents h3 {
+  color: #313200;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  border-radius: 20px;
+  border: 1px solid #595a09;
+  background: #f3ffab;
+  padding: 5px 17.5px;
+  margin-bottom: 18px;
+}
+
+.houseDetailContents ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  border: 1px solid #000;
+  background: #fff;
+  padding: 12px 24px;
+}
+
+.houseDetailContents ul li {
+  text-align: center;
+}
+
+.houseDetailContents ul li:nth-child(1) {
+  border-radius: 20px;
+  background: #e4eff0;
+  padding: 8px;
+}
+
+.houseDetailContents ul li:nth-child(2) {
+  color: #484646;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 21.6px */
+  letter-spacing: -0.36px;
+}
+.houseDetailContents ul li:nth-child(2) span {
+  color: var(--Main, #386937);
+  font-size: 18px;
+}
+
+.houseDetailContents ul li img {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+/* 기본 스타일은 유지하고 아래 미디어 쿼리 추가 */
+
+/* 모바일 디바이스를 위한 미디어 쿼리 */
+@media screen and (max-width: 768px) {
+  .houseContainerWrap {
+    padding: 0 16px;
+  }
+  .houseMainSection {
+    padding: 20px 0;
+  }
+
+  .houseTitleText h1 {
+    font-size: 18px;
+  }
+
+  .houseTitleText h1 span {
+    font-size: 22px;
+  }
+
+  .houseMeritzLogo {
+    width: 120px;
+    margin-top: 10px;
+  }
+
+  .houseCoverageSection {
+    padding: 25px 15px;
+  }
+
+  .houseCoverageContents h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .houseCoverageContents p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .houseSupportContents {
+    padding: 12px 0;
+    gap: 10px;
+  }
+
+  .houseSupportDetailText span {
+    font-size: 13px;
+  }
+
+  .houseSupportDetailText h3 {
+    font-size: 16px;
+  }
+
+  .houseCiteSection {
+    margin-top: 15px;
+  }
+
+  .houseCiteSection cite {
+    font-size: 12px;
+  }
+
+  .houseProviderSection {
+    margin-top: 40px;
+    gap: 25px;
+  }
+
+  .houseProviderSection h2 {
+    font-size: 20px;
+  }
+
+  .houseProviderSection h2 span {
+    font-size: 22px;
+  }
+
+  .houseDisasterCoverage {
+    margin-top: 40px;
+  }
+
+  .houseDisasterCoverage h2 {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .houseCoverageDetail {
+    gap: 25px;
+  }
+
+  .houseDetailContents h3 {
+    font-size: 16px;
+    padding: 4px 14px;
+    margin-bottom: 12px;
+  }
+
+  .houseDetailContents ul {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .houseDetailContents ul li:nth-child(2) {
+    font-size: 14px;
+  }
+
+  .houseDetailContents ul li img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* 더 작은 모바일 화면을 위한 추가 미디어 쿼리 (344px 기준) */
+@media screen and (max-width: 344px) {
+  .houseContainerWrap {
+    padding: 0 10px;
+    margin-top: 30px;
+  }
+
+  .houseTitle {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .houseTitleText {
+    align-items: center;
+    text-align: center;
+  }
+
+  .houseTitleText h1 {
+    font-size: 16px;
+  }
+
+  .houseTitleText h1 span {
+    font-size: 18px;
+  }
+
+  .houseMeritzLogo {
+    width: 100px;
+    margin-top: 8px;
+  }
+
+  .houseCoverageSection {
+    padding: 20px 12px;
+  }
+
+  .houseCoverageContents h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .houseCoverageContents p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .houseSupportContents {
+    padding: 10px 0;
+    gap: 8px;
+  }
+
+  .houseSupportDetailText span {
+    font-size: 11px;
+  }
+
+  .houseSupportDetailText h3 {
+    font-size: 14px;
+  }
+
+  .houseProviderSection h2 {
+    font-size: 16px;
+  }
+
+  .houseProviderSection h2 span {
+    font-size: 18px;
+  }
+
+  .houseDisasterCoverage h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .houseDetailContents h3 {
+    font-size: 14px;
+    padding: 3px 12px;
+    margin-bottom: 10px;
+  }
+
+  .houseDetailContents ul li:nth-child(2) {
+    font-size: 12px;
+    line-height: 125%;
+  }
+
+  .houseDetailContents ul li img {
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,68 @@
+/* Container 스타일 */
+.container {
+    width: 100%;
+}
+
+/* Section 스타일 */
+.dateSection {
+    padding: 0 4%;
+}
+
+/* PC 사이즈에서 패딩 증가 */
+@media (min-width: 768px) {
+    .dateSection {
+        padding: 0 6%;
+    }
+}
+
+/* 제목 스타일 */
+.dateSection h1 {
+    color: #050505;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 40px 0;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inputWrapper label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #374151;
+}
+
+.dateInput {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: #1f2937;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box;
+}
+
+.dateInput:focus {
+    outline: none;
+    border-color: #386937;
+}
+
+.dateInput.disabled {
+    background-color: #f3f4f6;
+    color: #6b7280;
+    cursor: not-allowed;
+    border-color: #e5e7eb;
+}

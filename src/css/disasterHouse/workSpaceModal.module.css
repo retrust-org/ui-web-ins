@@ -1,0 +1,101 @@
+/* workSpaceModal.module.css */
+.modalHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  margin-bottom: 100px;
+}
+
+.closeButton {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.title {
+  color: #000;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  text-align: left;
+}
+
+.subTitle {
+  color: #828282;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.54px;
+  text-align: left;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.button {
+  flex: 1;
+  padding: 18px 0;
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.primaryBtn {
+  background: var(--disable, #c3d2c3);
+  color: #4a4a4a;
+}
+
+.secondaryBtn {
+  background: var(--Main, #386937);
+  color: #fff;
+}
+
+/* 모바일 반응형 - 작은 화면 디바이스 */
+@media screen and (max-width: 480px) {
+  .modalHeader {
+    margin-bottom: 80px; /* 모바일에서는 여백 축소 */
+  }
+
+  .title {
+    font-size: 20px; /* 모바일에서는 글씨 크기 축소 */
+  }
+
+  .subTitle {
+    font-size: 14px; /* 모바일에서는 글씨 크기 축소 */
+  }
+
+  .button {
+    padding: 14px 0; /* 모바일에서는 버튼 높이 축소 */
+    font-size: 15px;
+  }
+
+  .buttonContainer {
+    gap: 12px; /* 모바일에서는 버튼 간격 축소 */
+  }
+}
+
+/* 태블릿 반응형 - 중간 크기 화면 */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .modalHeader {
+    margin-bottom: 80px; /* 태블릿에서는 중간 크기 여백 */
+  }
+
+  .title {
+    font-size: 21px; /* 태블릿에서는 중간 크기 글씨 */
+  }
+}

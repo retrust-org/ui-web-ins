@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88" fill="none">
+  <rect x="0.5" y="0.5" width="87" height="87" rx="11.5" stroke="#B8B9BC" stroke-dasharray="2 2"/>
+  <g clip-path="url(#clip0_100_34804)">
+    <path d="M52 35V28C52 26.8954 51.1046 26 50 26H37.8284C37.298 26 36.7893 26.2107 36.4142 26.5858L34.5 28.5L32.5858 30.4142C32.2107 30.7893 32 31.298 32 31.8284V48C32 49.1046 32.8954 50 34 50H38" stroke="#66686F" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M42 43V32M42 32L38 36M42 32L46 36" stroke="#66686F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M50.1468 53.7184L56.8643 47.0009C58.6217 45.2436 58.6217 42.3943 56.8643 40.637V40.637C55.1069 38.8796 52.2577 38.8796 50.5003 40.637L43.0757 48.0616C41.9041 49.2332 41.9041 51.1327 43.0757 52.3042V52.3042C44.2473 53.4758 46.1468 53.4758 47.3184 52.3042L54.0359 45.5867C54.6217 45.0009 54.6217 44.0512 54.0359 43.4654V43.4654C53.4501 42.8796 52.5003 42.8796 51.9146 43.4654L45.9041 49.4758" stroke="#66686F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="44" y="78" fill="#66686F" font-size="10" text-anchor="middle" dominant-baseline="middle">전체보기</text>
+</svg>

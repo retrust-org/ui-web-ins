@@ -1,0 +1,156 @@
+/* addressSearch.module.css */
+
+.addressSearchSection {
+  margin: 0 auto;
+  padding: 24px;
+  padding-bottom: 100px;
+  font-family: "Noto Sans KR", sans-serif;
+  width: 100%;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.searchContainer {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  border: 1px solid var(--Color, #aaa);
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #313131;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  outline: none;
+}
+
+.searchContainer img {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* 검색 결과 컨테이너 */
+.resultsContainer {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.suggestionList {
+  width: 100%;
+  border-radius: 4px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.suggestionItem {
+  border-radius: 12px;
+  background: var(--gray1, #f3f4f6);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.suggestionItem.active {
+  border: 1.5px solid var(--Main, #386937);
+  background: var(--Sub, #ebf0eb);
+}
+
+.addressContent {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.roadAddress {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 17px;
+}
+
+.roadAddress p:nth-child(1) {
+  color: #313131;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 2px;
+}
+
+.roadAddress p:nth-child(2) {
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.jibunAddress {
+  color: #313131;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.selectedAddress {
+  margin: 15px 0;
+  padding: 12px 15px;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  border-left: 3px solid #4a90e2;
+  font-size: 15px;
+}
+
+.errorMessage {
+  color: #e74c3c;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #fdecea;
+  border-radius: 4px;
+}
+
+.loadingText {
+  text-align: center;
+  margin: 15px 0;
+  color: #666;
+}
+
+.applyButton {
+  width: 100%;
+  padding: 12px;
+  background-color: #386937;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.applyButton:hover {
+  background-color: #2c5229;
+}

@@ -1,0 +1,71 @@
+.question {
+    width: 100%;
+    margin-bottom: 0.6rem;
+}
+
+.h3_questionTitle {
+    color: #1b1e28;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%; /* 22.4px */
+}
+.p_question {
+    font-size: 12px;
+    color: #96989c;
+    font-weight: 500;
+    line-height: 140%; /* text-xs size assuming base font size of 1rem */
+    width: 91%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4px; /* 2/4 = 0.5rem (assuming base font size of 1rem) */
+    margin-bottom: 12px;
+}
+
+.selectBtnBox {
+    display: flex;
+    width: 100%;
+    margin-bottom: 2.5rem; /* 10/4 = 2.5rem (assuming base font size of 1rem) */
+    gap: 1rem; /* Assuming base font size of 1rem */
+    justify-content: center;
+}
+
+.yesBtn {
+    flex-basis: 35%; /* Assuming base font size of 1rem */
+    border-radius: 0.75rem; /* Assuming base font size of 1rem */
+    opacity: 0.9;
+    border-width: 2px;
+    color: #7a9b79;
+    font-weight: 600;
+}
+
+.selecColor {
+    /* Assuming base font size of 1rem */
+    border-radius: 0.75rem; /* Assuming base font size of 1rem */
+    opacity: 0.9;
+    border-width: 2px;
+    color: #7a9b79;
+    font-weight: 600;
+    border-color: #7a9b79;
+    opacity: 1;
+}
+
+.noSelectColor {
+    border-radius: 0.75rem;
+    opacity: 0.9;
+    border-width: 2px;
+    font-weight: 600;
+    border-color: #bebebe;
+    color: #bebebe;
+    opacity: 1;
+}
+
+.noBtn {
+    flex-basis: 50%; /* Assuming base font size of 1rem */
+    padding-top: 0.5rem; /* 2/4 = 0.5rem (assuming base font size of 1rem) */
+    padding-bottom: 0.5rem; /* 2/4 = 0.5rem (assuming base font size of 1rem) */
+    border-radius: 0.75rem; /* Assuming base font size of 1rem */
+    opacity: 0.9;
+    border-width: 2px;
+    color: #7a9b79;
+    font-weight: 600;
+}

@@ -1,0 +1,122 @@
+/* serviceAnnonuce.module.css */
+
+/* 컨테이너 스타일 */
+.TextContainer {
+  width: 100%;
+  padding-bottom: 80px;
+}
+
+.TextContainerWrap {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 제목 스타일 */
+.textTitle,
+.contentTitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33.6px;
+  text-align: left;
+  color: #1b1e28;
+  margin-bottom: 10px;
+}
+
+/* 부제목 스타일 */
+.TextContainerWrap h3,
+.infotitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1b1e28;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* 섹션 텍스트 스타일 */
+.sectionText {
+  font-size: 14px;
+  font-weight: 400;
+  color: #1b1e28;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+/* 레이아웃 스타일 */
+.textFlex {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.textFlex p {
+  display: flex;
+}
+
+/* 서브섹션 스타일 */
+.subSections p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1b1e28;
+  margin-bottom: 8px;
+}
+
+/* 문단 스타일 */
+.TextContainerWrap p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1b1e28;
+  margin-bottom: 8px;
+}
+
+/* 리스트 스타일 */
+.TextContainerWrap ul {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+.TextContainerWrap li {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1b1e28;
+  margin-bottom: 6px;
+  list-style: none;
+}
+
+/* 날짜 스타일 */
+.TextContainerWrap div p {
+  margin-bottom: 6px;
+}
+
+/* 버튼 스타일 */
+.TextContainer button {
+  display: block;
+  margin: 24px auto;
+}
+
+/* 수정: 인포 타이틀 폰트 수정 (기존 코드에 오타가 있었음) */
+.infotitle {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* 반응형 조정 */
+@media (max-width: 768px) {
+  .TextContainerWrap {
+    padding: 16px 16px;
+  }
+
+  .textTitle,
+  .contentTitle {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .TextContainerWrap h3,
+  .infotitle {
+    font-size: 16px;
+  }
+}

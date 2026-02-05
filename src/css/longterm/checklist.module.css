@@ -1,0 +1,306 @@
+/* checklist.module.css */
+
+/* 제공된 타이틀 스타일 */
+.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 26px;
+  padding-top: 8px;
+}
+
+.title h1,
+.title span {
+  color: #000;
+  font-size: 22px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.title span {
+  font-weight: 700;
+}
+
+.title h1 {
+  font-weight: 500;
+}
+
+.allAgreeText {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.checkListContainer {
+  width: 100%;
+}
+
+.checkListContainer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 16px; /* 전체 컨텐츠 너비에 패딩값 16px 추가 */
+}
+
+.checkListContainer ul li {
+  color: #676767;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  list-style: none; /* 기존 리스트 스타일 제거 */
+  position: relative; /* 가상 요소 위치 기준점 */
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  width: 100%;
+}
+
+.checkListContainer ul li:before {
+  content: "·"; /* 가운뎃점 추가 */
+  position: absolute;
+  left: -10px;
+  width: 4%; /* · 영역 너비 4%로 축소 */
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+}
+
+.checkListContainer ul li span {
+  width: 96%; /* 텍스트 영역 너비 96%로 확장 */
+  display: inline-block;
+  text-align: left;
+}
+
+.itemTitle {
+  color: #4d4d4d;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: left;
+}
+
+/* 체크박스 관련 스타일 */
+.checkIcon {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px 2px;
+  transition: all 0.2s ease;
+}
+
+/* 추가 스타일 */
+.checkContents {
+  display: flex;
+  flex-direction: column;
+}
+
+.allAgree {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: left;
+  /* padding-bottom 및 border-bottom 제거 */
+}
+
+.checkboxWrapper {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.checkboxWrapper p {
+  margin-left: 16px;
+  text-align: left;
+}
+
+.firstAgree,
+.secondAgree {
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 25px 20px;
+  text-align: left;
+}
+
+.firstAgree > div,
+.secondAgree > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.agreeButton {
+  width: 100%;
+  margin-top: 20px;
+  padding: 16px 0;
+  border-radius: 16px;
+  color: white;
+  background-color: #386937;
+}
+
+.disabledButton {
+  background-color: rgb(195, 210, 195);
+  color: white;
+  cursor: not-allowed;
+  padding: 16px 0;
+  border-radius: 16px;
+}
+
+/* 반응형 스타일 */
+
+/* 태블릿과 중간 크기 화면 (768px 이하) */
+@media screen and (max-width: 768px) {
+  .title h1,
+  .title span {
+    font-size: 22px;
+  }
+
+  .allAgreeText {
+    font-size: 18px;
+  }
+
+  .itemTitle {
+    font-size: 16px;
+  }
+
+  .firstAgree,
+  .secondAgree {
+    padding: 20px 16px;
+  }
+
+  .checkListContainer ul li {
+    font-size: 12px;
+  }
+}
+
+/* 일반 모바일 화면 (480px 이하) */
+@media screen and (max-width: 480px) {
+  .title h1,
+  .title span {
+    font-size: 20px;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .allAgreeText {
+    font-size: 16px;
+  }
+
+  .itemTitle {
+    font-size: 15px;
+  }
+
+  .checkIcon {
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+  }
+
+  .firstAgree,
+  .secondAgree {
+    padding: 16px 14px;
+    border-radius: 12px;
+  }
+
+  .firstAgree > div,
+  .secondAgree > div {
+    margin-bottom: 18px;
+  }
+
+  .checkListContainer ul {
+    gap: 8px;
+    padding-left: 12px;
+  }
+
+  .checkListContainer ul li {
+    font-size: 11px;
+  }
+
+  .agreeButton,
+  .disabledButton {
+    padding: 14px 0;
+    border-radius: 12px;
+  }
+}
+
+/* 초소형 모바일 화면 (360px 이하) */
+@media screen and (max-width: 360px) {
+  .title h1,
+  .title span {
+    font-size: 18px;
+  }
+
+  .title {
+    margin-bottom: 16px;
+  }
+
+  .allAgreeText {
+    font-size: 15px;
+  }
+
+  .checkboxWrapper p {
+    margin-left: 12px;
+  }
+
+  .itemTitle {
+    font-size: 14px;
+  }
+
+  .checkIcon {
+    width: 14px;
+    height: 14px;
+    font-size: 10px;
+    padding: 1px 1px;
+  }
+
+  .firstAgree,
+  .secondAgree {
+    padding: 14px 12px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+  }
+
+  .firstAgree > div,
+  .secondAgree > div {
+    margin-bottom: 16px;
+  }
+
+  .checkListContainer ul {
+    gap: 6px;
+    padding-left: 10px;
+  }
+
+  .checkListContainer ul li {
+    font-size: 10px;
+    line-height: 130%;
+  }
+
+  .checkListContainer ul li:before {
+    left: -8px;
+    font-size: 14px;
+  }
+
+  .agreeButton,
+  .disabledButton {
+    padding: 12px 0;
+    border-radius: 10px;
+    margin-top: 16px;
+    font-size: 14px;
+  }
+}

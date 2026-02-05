@@ -1,0 +1,169 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 40px 40px 0 0;
+  width: 100%;
+  max-width: 100%;
+  bottom: 0;
+  position: absolute;
+  padding: 40px 20px 20px 20px;
+}
+
+.modalContent {
+  padding-bottom: 16px;
+}
+
+.modalContentWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.modalTitle {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1b2e28;
+}
+
+.progressBar {
+  display: flex;
+  margin-top: 10px;
+}
+
+.progressDot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #f1f3f4;
+  margin-right: 6px;
+}
+
+.activeDot {
+  background-color: #6699ea; /* example color */
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.keyboardKey {
+  cursor: pointer;
+  text-align: center;
+  padding: 14px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modalActions {
+  margin-top: 14px;
+}
+
+.closeButton {
+  width: 100%;
+  padding: 16px;
+  background-color: #386937; /* example color */
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.inputWrap {
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+/* inputWrap 내부의 borderedInputBox 스타일 - border 제거 (inputWrap에서 처리) */
+.inputWrap :global([class*="borderedInputBox"]),
+.inputWrap
+  :global(.pay_accountNumberWrapper__4X-S4)
+  :global([class*="borderedInputBox"]) {
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* inputWrap 내부의 borderedInput 스타일 */
+.inputWrap :global([class*="borderedInput"]) {
+  font-size: 18px !important;
+  color: #96989c !important;
+}
+
+.inputWrap :global([class*="borderedInput"])::placeholder {
+  font-size: 16px !important;
+  color: #96989c !important;
+}
+
+/* commonSecureKeyboard*/
+
+.modalContents {
+  width: 100%;
+}
+
+.modals {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 40px 40px 0 0;
+  width: 100%;
+  max-width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+
+@media screen and (min-width: 450px) {
+  .modals,
+  .modal {
+    max-width: 440px;
+    border-radius: 30px 30px 0 0;
+  }
+}
+
+.modalTitles {
+  padding: 10px 0;
+  color: #1b2e28;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.keyboardKeys {
+  cursor: pointer;
+  text-align: center;
+  padding: 14px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.closeButtons {
+  width: 100%;
+  padding: 16px 0;
+  background-color: #386937; /* example color */
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.disabled {
+  opacity: 0.5;
+}

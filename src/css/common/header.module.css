@@ -1,0 +1,49 @@
+.headers {
+  position: fixed;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  z-index: 50;
+  background-color: #fff;
+}
+
+@media (min-width: 500px) {
+  .headers {
+    width: 440px;
+  }
+}
+
+.headersContents {
+  width: 100%;
+  padding-top: 22px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+}
+
+.headersContentsFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.headersContentsFlex span {
+  cursor: pointer;
+  font-size: 14px;
+  flex-basis: 20%;
+}
+
+.headersContentsFlex p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: #1b1e28;
+  flex-basis: 50%;
+}
+
+.headersContentsFlex div {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: end;
+}

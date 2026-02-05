@@ -1,0 +1,216 @@
+.sliderContainer {
+  position: relative;
+}
+
+.fallbackImageContainer {
+  width: 100%;
+}
+
+.fallbackImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.backgroundLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 80%;
+  background-color: rgba(226, 242, 226, 0.7);
+  border-radius: 0 50px 50px 0;
+}
+
+.mainContent {
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  position: relative;
+  padding: 12px 0 18px;
+}
+
+.sliderWrapper {
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+}
+
+.slideTrack {
+  display: flex;
+  transition: transform 300ms ease-in-out;
+}
+
+.slideItem {
+  width: 100%;
+  flex-shrink: 0;
+  padding: 0 5.5%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f3f4f6;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.titleWrapper {
+  min-width: 0;
+  flex: 1;
+}
+
+.titleContent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.title {
+  color: #1b1e28;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.statusBadge {
+  padding: 4px 8px;
+  background-color: #38b144;
+  color: white;
+  font-size: 10px;
+  font-weight: 500;
+  border-radius: 9999px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.nftLink {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.nftText {
+  color: #386937;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.nftIcon {
+  width: 14px;
+  height: 14px;
+  color: #386937;
+  transform: translateX(0);
+  transition: transform 0.2s;
+}
+
+.nftLink:hover .nftIcon {
+  transform: translateX(2px);
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.infoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infoLabel {
+  color: #888;
+  font-size: 14px;
+}
+
+.infoValue {
+  color: #333;
+  font-size: 14px;
+  margin-left: 16px;
+  font-weight: 500;
+}
+@media (min-width: 400px) {
+  .slideItem {
+    padding: 0 6%;
+  }
+  .card {
+    padding: 24px;
+  }
+}
+
+/* 320px 이하 화면 대응 */
+@media (max-width: 344px) {
+  .slideItem {
+    padding: 0 5%;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .cardHeader {
+    gap: 4px;
+    margin-bottom: 16px;
+  }
+
+  .titleContent {
+    gap: 4px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  .statusBadge {
+    padding: 2px 6px;
+    font-size: 10px;
+  }
+
+  .nftText {
+    font-size: 12px;
+  }
+
+  .nftIcon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .infoList {
+    gap: 12px;
+  }
+
+  .infoLabel,
+  .infoValue {
+    font-size: 12px;
+  }
+
+  .infoValue {
+    margin-left: 8px;
+  }
+}
+
+.slideCounter {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  z-index: 1;
+  letter-spacing: 2px;
+}

@@ -1,0 +1,101 @@
+/* SucceedModal.module.css */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 0 20px;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.modalWrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.commonX {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.modalWrap img {
+  margin-bottom: 12px;
+}
+
+.modalTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.modalTitle span {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: #1b1e28;
+}
+
+.modalTitle p:nth-child(1) {
+  color: #386937;
+}
+
+@media screen and (min-width: 500px) {
+  .modal {
+    width: 360px;
+  }
+}
+
+.TextContent {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 0;
+}
+
+.TextContent p,
+span {
+  color: #96989c;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+}
+
+.buttonWrap {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.buttonWrap button {
+  border-radius: 12px;
+  width: 100%;
+  padding: 16px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  background-color: #386937;
+  color: #fff;
+}

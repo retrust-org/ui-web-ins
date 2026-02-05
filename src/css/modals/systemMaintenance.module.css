@@ -1,0 +1,74 @@
+/* 시스템 점검 모달 전용 CSS */
+
+.closeButton {
+  float: right;
+  cursor: pointer;
+}
+
+.maintenanceIcon {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 50%;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #1b1e28;
+  margin-top: 34px;
+}
+
+.content {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #1b1e28;
+}
+
+.text_secondary {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #386937;
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+.times {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #e8efe8;
+  border-radius: 20px;
+  padding: 14px 14px;
+  margin-top: 16px;
+}
+
+.times p {
+  color: #1b1e28;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.dateinfo {
+  color: #4e4c4c;
+  font-size: 15px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.warning {
+  color: #ff4444 !important;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 20px;
+}

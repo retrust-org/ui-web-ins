@@ -1,0 +1,153 @@
+/* EmployeeCountModal 스타일 */
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.closeButton img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.modalContent {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.modalTitle {
+  color: #121212;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.modalSubtitle {
+  color: #707070;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.employeeCountLabel {
+  color: #4a4a4a;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.45px;
+  margin-top: 16px;
+}
+
+.employeeOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 12px;
+}
+
+.employeeOption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.employeeCount {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.employeeCount img {
+  width: 24px;
+  height: 24px;
+}
+
+.employeeCount span {
+  color: #4a4a4a;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.45px;
+}
+
+.industryText {
+  color: #828282;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: right;
+}
+
+.bottomSection {
+  display: flex;
+  flex-direction: column;
+  margin-top: 37px;
+}
+
+.legalText {
+  color: rgba(56, 105, 55, 0.5);
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 6px;
+}
+
+.confirmButton {
+  width: 100%;
+  padding: 18px 0;
+  border-radius: 12px;
+  background-color: #386937;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.confirmButton:hover {
+  background-color: #2d5329;
+}
+
+.confirmButton:active {
+  background-color: #23401f;
+}
+
+/* 반응형 스타일 */
+@media screen and (max-width: 768px) {
+  .modalTitle {
+    font-size: 18px;
+  }
+
+  .modalSubtitle {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 344px) {
+  .modalTitle {
+    font-size: 16px;
+  }
+
+  .modalSubtitle {
+    font-size: 12px;
+  }
+}

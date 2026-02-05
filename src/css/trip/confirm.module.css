@@ -1,0 +1,355 @@
+.confirmContents {
+  width: 100%;
+}
+.confirmWrap {
+  padding: 0 4%;
+  padding-bottom: 60px;
+}
+
+.GuaranteeconfirmWrap {
+  padding: 0 4%;
+  margin-top: 36px;
+}
+.confirmWrap h3,
+.GuaranteeconfirmWrap h3 {
+  color: #1b1e28;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  margin-bottom: 24px;
+}
+
+.section {
+  width: 100%;
+  background-color: #ebf0eb;
+  border-radius: 12px;
+}
+
+.on {
+  background-color: rgba(14, 152, 246, 0.06);
+}
+
+.sectionWrap {
+  padding: 20px 16px;
+}
+
+.ContentsImgWrap {
+  border-radius: 12px;
+  width: 50px;
+  height: 50px;
+}
+
+.ContentsImg {
+  width: 100%;
+  object-fit: cover;
+}
+
+.sectionWrap_title {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.sectionWrap_title p {
+  font-size: 18px;
+  color: #1b1e28;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+.dataContext {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  margin-top: 18px;
+}
+
+.dataContext p {
+  color: #494b53;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+.dataContext p.active {
+  color: #0e98f6;
+}
+
+.dataContext span {
+  padding: 4px 12px;
+  border-radius: 14px;
+  background-color: #fff;
+  color: #386937;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.section_DataContentsWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.dataFlexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.dataFlexbox p {
+  color: #66686f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.dataFlexbox span {
+  color: #1b1e28;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+/* 총 보험료*/
+.section_cost {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 18px;
+}
+
+.section_costWrap {
+  padding: 16px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.section_costWrap span {
+  flex-basis: 70%;
+  color: #386937;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: right;
+  margin-right: 4px;
+  flex-basis: 100%;
+}
+
+.section_costWrap p {
+  color: #386937;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 24px;
+  margin-left: 2px;
+  flex-basis: 80%;
+}
+
+.filterBtn {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.filterBtnWrap {
+  width: 100%;
+  margin: 20px 0;
+}
+.filterBtnWrap ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.filterBtnWrap ul li {
+  background-color: #f3f4f6;
+  color: #96989c;
+  border-radius: 10px;
+  padding: 10px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.filterBtnWrap ul li.active {
+  background-color: #386937;
+  color: #fff;
+}
+.dataListWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+  padding: 0 4px;
+  margin-top: 10px;
+}
+
+.datalist_text {
+  color: #386937;
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 12px;
+  flex-basis: 8%;
+  margin-right: 8px;
+}
+.priceDatas {
+  display: flex;
+  flex-basis: 70%;
+}
+
+.priceDatas,
+.imagePrice p {
+  color: #96989c;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.dataList {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.imagePrice {
+  display: flex;
+  flex-basis: 32%;
+  align-items: center;
+}
+
+.imagePrice p {
+  display: flex;
+  flex-basis: 90%;
+  justify-content: flex-end;
+}
+
+.detailInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 16px;
+}
+
+.detailInfo p {
+  color: #1b1e28;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.TextFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dataFlexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.dataFlexCol p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: right;
+}
+
+.announce {
+  color: #e86565;
+  padding-top: 1.5rem;
+  text-align: left;
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+  align-items: start;
+  font-size: 12px;
+}
+
+.announce span {
+  color: #e86565;
+}
+
+/* CSS 파일에 추가 */
+.dataContext span.hasDeparted {
+  color: #0e98f6;
+}
+
+.section_costWrap span.hasDeparted {
+  color: #0e98f6;
+}
+
+.section_costWrap p.hasDeparted {
+  color: rgba(6, 82, 134, 0.72);
+}
+
+.datalist_text.hasDeparted {
+  color: #0e98f6;
+}
+
+.filterBtnWrap ul li.hasDeparted {
+  background-color: #0e98f6;
+  color: #fff;
+}
+/* CSS에 추가 */
+.highlight {
+  color: #386937;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  margin-bottom: 24px;
+}
+
+.hasDeparteds {
+  color: #0e98f6;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  margin-bottom: 24px;
+}
+
+.pdfBtnWrap {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding-bottom: 10px;
+}
+
+.pdfDownloadButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 12px;
+  border: 1px solid #006227;
+  padding: 3.5px 11px;
+}
+
+.pdfDownloadButton span {
+  color: #006227;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}

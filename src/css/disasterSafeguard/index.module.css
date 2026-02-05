@@ -1,0 +1,522 @@
+#container {
+  width: 100%;
+  background: linear-gradient(180deg, #fff 0%, #f7ffc5 100%);
+  padding-bottom: 100px;
+}
+
+.containerWrap {
+  width: 100%;
+  padding: 0 24px;
+}
+
+.mainSection {
+  padding: 50px 0;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.titleText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.titleText h1 {
+  color: #000;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.44px;
+}
+
+.titleText h1 span {
+  color: #000;
+  text-align: center;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.meritzLogo {
+  align-self: flex-end;
+  margin-top: 16px;
+}
+
+.listSection {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.listSection ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 34px;
+  margin-bottom: 60px;
+}
+
+.listSection ul li {
+  color: #676767;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  border-bottom: 1px solid #676767;
+}
+
+.coverageSection {
+  width: 100%;
+  border-radius: 20px;
+  border: 2.5px solid #1bf4a6;
+  background: linear-gradient(183deg, #fff 9.94%, #ddf8eb 103.25%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 38px 22px;
+}
+
+.coverageContents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.coverageSection .coverageContents h2 {
+  color: #3b3c36;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.26px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.coverageContents p {
+  color: #4a4a4a;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  margin-bottom: 28px;
+}
+
+.supportContents {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 17px;
+  padding: 18px 0;
+}
+
+.supportContents:nth-child(1),
+.supportContents:nth-child(2) {
+  border-bottom: 0.5px solid rgba(148, 148, 148, 0.4);
+}
+
+.supportDetailText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  width: 100%;
+}
+
+.supportDetailText span {
+  color: #707070;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.supportDetailText h3 {
+  color: #030303;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.citeSection {
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(49, 50, 0, 0.12);
+  margin-top: 20px;
+  text-align: center;
+}
+
+.citeSection cite {
+  color: #a6a6a6;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.7px;
+  width: 100%;
+}
+.providerSection {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.providerSection h2 {
+  color: #313200;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.24px;
+}
+
+.providerSection h2 span {
+  color: #313200;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.26px;
+}
+
+.providerSectionImage {
+  width: 100%;
+}
+.providerSectionImage img {
+  margin: 0 auto;
+}
+
+.disasterCoverage {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.disasterCoverage h2 {
+  color: #313200;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.28px;
+}
+
+.disasterCoverage {
+  width: 100%;
+}
+.disasterCoverage h2 {
+  color: #313200;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  margin-bottom: 40px;
+}
+
+.coverageDetail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.detailContents {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailContents h3 {
+  color: #313200;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  border-radius: 20px;
+  border: 1px solid #595a09;
+  background: #f3ffab;
+  padding: 5px 17.5px;
+  margin-bottom: 18px;
+}
+
+.detailContents ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  border: 1px solid #000;
+  background: #fff;
+  padding: 12px 24px;
+}
+
+.detailContents ul li {
+  text-align: center;
+}
+
+.detailContents ul li:nth-child(1) {
+  border-radius: 20px;
+  background: #e4eff0;
+  padding: 8px;
+}
+
+.detailContents ul li:nth-child(2) {
+  color: #484646;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 21.6px */
+  letter-spacing: -0.36px;
+}
+.detailContents ul li:nth-child(2) span {
+  color: var(--Main, #386937);
+  font-size: 18px;
+}
+
+.detailContents ul li img {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+/* 기본 스타일은 유지하고 아래 미디어 쿼리 추가 */
+
+/* 모바일 디바이스를 위한 미디어 쿼리 */
+@media screen and (max-width: 768px) {
+  .containerWrap {
+    padding: 0 16px;
+  }
+  .mainSection {
+    padding: 40px 0;
+  }
+
+  .titleText h1 {
+    font-size: 18px;
+  }
+
+  .titleText h1 span {
+    font-size: 22px;
+  }
+
+  .meritzLogo {
+    width: 120px;
+    margin-top: 10px;
+  }
+
+  .listSection {
+    margin-top: 30px;
+  }
+
+  .listSection ul {
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+
+  .listSection ul li {
+    font-size: 14px;
+  }
+
+  .coverageSection {
+    padding: 25px 15px;
+  }
+
+  .coverageContents h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .coverageContents p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .supportContents {
+    padding: 12px 0;
+    gap: 10px;
+  }
+
+  .supportDetailText span {
+    font-size: 13px;
+  }
+
+  .supportDetailText h3 {
+    font-size: 16px;
+  }
+
+  .citeSection {
+    margin-top: 15px;
+  }
+
+  .citeSection cite {
+    font-size: 12px;
+  }
+
+  .providerSection {
+    margin-top: 40px;
+    gap: 25px;
+  }
+
+  .providerSection h2 {
+    font-size: 20px;
+  }
+
+  .providerSection h2 span {
+    font-size: 22px;
+  }
+
+  .disasterCoverage {
+    margin-top: 40px;
+  }
+
+  .disasterCoverage h2 {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .coverageDetail {
+    gap: 25px;
+  }
+
+  .detailContents h3 {
+    font-size: 16px;
+    padding: 4px 14px;
+    margin-bottom: 12px;
+  }
+
+  .detailContents ul {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .detailContents ul li:nth-child(2) {
+    font-size: 14px;
+  }
+
+  .detailContents ul li img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* 더 작은 모바일 화면을 위한 추가 미디어 쿼리 (344px 기준) */
+@media screen and (max-width: 344px) {
+  .containerWrap {
+    padding: 0 10px;
+  }
+
+  .title {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .titleText {
+    align-items: center;
+    text-align: center;
+  }
+
+  .titleText h1 {
+    font-size: 16px;
+  }
+
+  .titleText h1 span {
+    font-size: 18px;
+  }
+
+  .meritzLogo {
+    width: 100px;
+    margin-top: 8px;
+  }
+
+  .listSection ul {
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+
+  .listSection ul li {
+    font-size: 12px;
+  }
+
+  .coverageSection {
+    padding: 20px 12px;
+  }
+
+  .coverageContents h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .coverageContents p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .supportContents {
+    padding: 10px 0;
+    gap: 8px;
+  }
+
+  .supportDetailText span {
+    font-size: 11px;
+  }
+
+  .supportDetailText h3 {
+    font-size: 14px;
+  }
+
+  .providerSection h2 {
+    font-size: 16px;
+  }
+
+  .providerSection h2 span {
+    font-size: 18px;
+  }
+
+  .disasterCoverage h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .detailContents h3 {
+    font-size: 14px;
+    padding: 3px 12px;
+    margin-bottom: 10px;
+  }
+  on .detailContents ul li:nth-child(2) {
+    font-size: 12px;
+    line-height: 125%;
+  }
+
+  .detailContents ul li img {
+    width: 30px;
+    height: 30px;
+  }
+}

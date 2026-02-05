@@ -1,0 +1,208 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.containerWrap {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.contents {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  min-height: 500px;
+}
+
+.viewContainer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.viewContainer.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.selectedInfo {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.selectedInfo span {
+  color: #386937;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+}
+
+.selectedInfoContents {
+  width: 100%;
+  border: 1px solid #cccc;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.contentsBox {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.contentsIamges {
+  width: 100%;
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageWrap {
+  width: 100%;
+  height: 190px;
+}
+
+.imageWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.selectedMethod {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.titles {
+  color: #386937;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+}
+
+.selectedContents {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.selected {
+  width: 50%;
+  border: 1px solid #cccc;
+  padding: 18px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.activeSelected {
+  border-color: #386937;
+}
+
+.selected p {
+  color: #1b1e28;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+}
+
+.nftInfos {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  padding: 12px;
+}
+
+.nftInfos p {
+  color: #1b1e28;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+}
+
+.insertInfo {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.insertInfo h3 {
+  color: #386937;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  font-style: normal;
+}
+
+.insertInfoTextContents {
+  width: 100%;
+  padding: 12px 2px;
+}
+
+.insertInfoTextContents ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.insertInfoTextContents ul li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.insertInfoTextContents ul li:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.insertInfoTextContents ul li p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.insertInfoTextContents ul li span {
+  color: #1b1e28;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.hiddenText {
+  text-align: left;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}

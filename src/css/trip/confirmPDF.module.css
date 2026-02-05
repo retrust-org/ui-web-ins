@@ -1,0 +1,22 @@
+.confirmContents{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.PDF_style{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 0;
+    border-radius: 12px;
+    background-color: #f3f4f6;
+    font-size: 12px;
+    color: #1b2b3e;
+    line-height: 20px;
+    font-weight: 500;
+    font-style: normal;
+}

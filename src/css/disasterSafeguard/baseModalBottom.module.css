@@ -1,0 +1,103 @@
+/* baseModalBottom.module.css */
+.bottomModalOverlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background: rgba(97, 97, 97, 0);
+  animation: fadeIn 0.15s ease forwards;
+}
+
+.bottomModalContent {
+  position: absolute;
+  bottom: 0;
+  border-radius: 40px 40px 0px 0px;
+  background: #fff;
+  box-shadow: 0px -3px 14.8px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px 24px 16px 24px;
+  overflow-y: auto;
+  width: 100%;
+  max-width: 440px;
+  min-height: 240px;
+  animation: slideUp 0.1s ease-out forwards;
+}
+
+/* 닫힐 때 오버레이에 적용되는 클래스 */
+.bottomModalOverlay.closing {
+  animation: fadeOut 0.15s ease forwards;
+}
+
+/* 닫힐 때 모달 콘텐츠에 적용되는 클래스 */
+.bottomModalContent.closing {
+  animation: slideDown 0.1s ease-in forwards;
+}
+
+/* 페이드인/아웃 애니메이션 */
+@keyframes fadeIn {
+  from {
+    background: rgba(97, 97, 97, 0);
+  }
+  to {
+    background: rgba(97, 97, 97, 0.8);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    background: rgba(97, 97, 97, 0.8);
+  }
+  to {
+    background: rgba(97, 97, 97, 0);
+  }
+}
+
+/* 슬라이드 업/다운 애니메이션 */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+/* 모바일 반응형 - 작은 화면 디바이스를 위한 스타일 */
+@media screen and (max-width: 480px) {
+  .bottomModalContent {
+    padding: 24px 16px 16px 16px;
+    max-width: 100%;
+  }
+}
+
+/* 태블릿 반응형 - 중간 크기 화면을 위한 스타일 */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .bottomModalContent {
+    padding: 32px 20px 16px 20px;
+    max-width: 100%;
+  }
+}
+
+/* 아주 작은 화면 디바이스를 위한 스타일 */
+@media screen and (max-width: 344px) {
+  .bottomModalContent {
+    padding: 20px 14px 14px 14px;
+    border-radius: 30px 30px 0px 0px;
+  }
+}

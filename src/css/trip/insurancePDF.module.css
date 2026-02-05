@@ -1,0 +1,182 @@
+/* styles/insurancePDF.module.css */
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 20mm;
+  background-color: white;
+}
+
+.container {
+  font-family: sans-serif;
+}
+
+.headerSection {
+  margin-bottom: 4rem;
+}
+
+.mainTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  padding-bottom: 1.75rem;
+  border-bottom: 2px solid #111827;
+  margin-bottom: 2.5rem;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  width: 100%;
+  align-baseline: baseline;
+}
+
+.infoColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.infoRow {
+  display: flex;
+  align-items: center;
+}
+
+.infoLabel {
+  width: 100px;
+  color: #4b5563;
+  font-size: 13px;
+}
+
+.infoValue {
+  color: #111827;
+  font-size: 13px;
+}
+
+.travelPeriod {
+  display: flex;
+  align-items: baseline;
+}
+
+.periodSeparator {
+  margin: 0 0.5rem;
+  color: #111827;
+}
+
+.premiumSection {
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.planGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.planCard {
+  border: 1px solid #2563eb;
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+}
+
+.planName {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+.planPrice {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.planPriceUnit {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #4b5563;
+  margin-left: 0.25rem;
+}
+
+.tableContainer {
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+.table {
+  width: 100%;
+  font-size: 13px;
+}
+
+.tableHeaderRow {
+  background-color: #f0f9ff;
+}
+
+.tableHeaderCell {
+  padding: 1rem 1.25rem;
+  font-weight: 600;
+  color: #374151;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tableHeaderCellRight {
+  composes: tableHeaderCell;
+  text-align: right;
+}
+
+.tableRow {
+  background-color: white;
+}
+
+.tableRowAlternate {
+  background-color: #f9fafb;
+}
+
+.tableCell {
+  padding: 0.875rem 1.25rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.tableCellRight {
+  composes: tableCell;
+  text-align: right;
+}
+
+.coverageTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin-bottom: 1.5rem;
+}
+
+.coveragePageNumber {
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: #6b7280;
+  margin-left: 0.5rem;
+}
+
+.coverageTable {
+  width: 100%;
+  font-size: 11px;
+  border-collapse: collapse;
+}
+
+.footnotes {
+  margin-top: 1.5rem;
+  font-size: 11px;
+  color: #6b7280;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}

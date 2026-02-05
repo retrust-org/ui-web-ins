@@ -1,0 +1,442 @@
+.section {
+  width: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.sectionWrap {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 60px); /* 헤더 높이를 뺀 전체 높이 */
+}
+.dateFilterSection {
+  display: flex;
+  justify-content: end;
+}
+
+.dateFilterBtn {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  padding: 4px 16px;
+  background: #f3f4f6;
+  border-radius: 20px;
+}
+
+.dateFilterBtn span {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #66686f;
+}
+
+.apiConents {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.dataContents {
+  width: 100%;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dataContentsWrap {
+  padding: 16px;
+  background: #ebf0eb;
+  border-radius: 12px;
+}
+
+.dataContentsTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dataContentsTitleImage {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dataContentsTitleImage p {
+  color: #1b1e28;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.dataContentsTitle span {
+  color: white;
+  padding: 2px 8px;
+  border-radius: 18px;
+  background-color: black;
+}
+
+.boundaryLine {
+  background-color: #c1d1c1;
+  height: 1px;
+  opacity: 0.3;
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+.dataInformationWrap {
+  width: 100%;
+}
+.dataInformationWrap ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dataInformationWrap ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dataInformationWrap ul li p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #1b1e28;
+}
+.dataInformationWrap ul li span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #66686f;
+}
+
+.editDoc {
+  display: flex;
+  justify-content: end;
+}
+.editDoc span {
+  color: #386937;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 12px;
+  background-color: #fff;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.moreBtnWrap {
+  width: 100%;
+}
+.moreBtn {
+  width: 100%;
+  margin-top: 10px;
+  background-color: rgba(102, 104, 111, 0.1);
+  padding: 10px 0;
+  border-radius: 8px;
+  margin-top: 16px;
+  display: flex;
+  gap: 1px;
+  justify-content: center;
+  cursor: pointer;
+}
+.accordionContent {
+  width: 100%;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.acoordionTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.acoordionTitle p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #66686f;
+}
+
+.acoordionTitleBtnWrap {
+  display: flex;
+  gap: 1px;
+}
+.acoordionTitleBtnWrap img {
+  width: 14px;
+}
+
+.acoordionTitle button {
+  color: #386937;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.moreBtn span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #66686f;
+}
+.moreBtn img {
+  width: 16px;
+}
+
+/* 테이블 css */
+
+.TableContents {
+  width: 100%;
+}
+
+.TableContentsWrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+}
+.TableBox {
+  overflow: hidden;
+  border-radius: 12px;
+  border: 2px solid #d9ddd9;
+  width: 100%;
+}
+
+.TableBox table {
+  width: 100%;
+  height: 100%;
+}
+.TableBox table > thead {
+  background-color: #e8e9ea;
+}
+
+.TableBox table > thead th > tr {
+  border-top-left-radius: 12px;
+}
+
+.TableBox table thead th {
+  padding: 12px;
+  border-right: 1px solid #d9ddd9;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+}
+.TableBox table > thead th:last-child {
+  border-right: 0;
+}
+
+.TableBox table tbody {
+  background-color: #fff;
+}
+
+.TableBox table tbody td {
+  border-right: 1px solid #d9ddd9;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  padding: 20px 12px;
+}
+
+.TableBox table tbody td:last-child {
+  border-right: 0px solid #d9ddd9;
+}
+
+.apiContents {
+  width: 100%;
+  margin-top: 20px;
+  flex-grow: 1; /* 남은 공간을 채우도록 */
+}
+
+.apiContentsWithMargin {
+  margin-top: 40px;
+}
+
+.apiContentsFlexCol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.apiContentsFlexCol ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.apiContentsFlexCol ul li {
+  color: #1b1e28;
+  font-weight: 600;
+  font-size: 20px;
+}
+.apiContentsFlexCol ul li:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+.apiContentsFlexCol ul li:nth-child(2) .highlight {
+  color: #386937;
+  font-weight: 600;
+  font-size: 20px;
+}
+.apiContentsFlexCol ul li:nth-child(2) .text {
+  color: #1b1e28;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.apiContentsFlexCol > .announce {
+  margin-bottom: 20px;
+}
+
+.announce {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.announce h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1b1e28;
+}
+
+.announce span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #eb5a57;
+  text-align: left;
+}
+.desc {
+  margin-bottom: 20px;
+}
+
+/* secretValue가 있을 때 announce 스타일 */
+.sectionWrap > .announce {
+  padding-bottom: 20px;
+}
+
+.apiContents p {
+  color: #1b1e28;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* 모달창 부분 css */
+
+.guideContainer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 12;
+  display: flex;
+  justify-content: center;
+}
+
+.guideContent {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 10;
+}
+
+.modal {
+  background-color: #fff;
+  width: 100%;
+  max-width: 440px;
+  border-radius: 12px 12px 0 0;
+  position: relative;
+  animation: slideUp 0.3s ease-out;
+  height: 250px;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.modalContent {
+  padding: 20px;
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #718096;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  color: #4a5568;
+}
+
+.modalTitle {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.modalText {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.floatingButton {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #eefcee;
+  color: white;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.floatingButton:hover {
+  background-color: #386937;
+}
+
+.buttonIcon {
+  width: 24px;
+  height: 24px;
+}

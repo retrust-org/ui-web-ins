@@ -1,0 +1,408 @@
+/* tirpSelect_CSS*/
+
+.TripSection {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.stickycontainer {
+  width: 99%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 1.25rem;
+  position: relative;
+}
+.stickyHeader {
+  position: sticky;
+  top: 3.125rem;
+  background: white;
+  z-index: 50;
+}
+
+/* 끝 */
+.title {
+  color: #1b1e28;
+  padding: 0 1.25rem;
+  line-height: 140%;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-style: normal;
+}
+.title span {
+  color: #386937;
+  line-height: 140%;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-style: normal;
+}
+
+.tripSelectBox {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0rem 0.625rem 0;
+}
+
+.tripNation {
+  color: #1b1e28;
+  line-height: 1.25rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.multiTripGuide {
+  font-size: 0.75rem;
+  color: #666;
+  margin: 8px 0;
+  line-height: 1.4;
+  padding: 8px 12px;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.emphasis {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.inputSearchboxWrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: transparent;
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1.5px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.inputSearchboxWrap:focus {
+  outline: none;
+  border: 1.5px solid #0e98f6;
+  background-color: transparent !important;
+}
+
+.inputSearchBox {
+  padding: 1rem;
+  background: none;
+  width: 100%;
+  margin-left: 1.75rem;
+  color: #b8b9bc;
+  font-size: 0.875rem;
+  font-weight: normal;
+}
+.inputSearchBox:focus {
+  outline: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.SearchIcon {
+  position: absolute;
+  left: 5%;
+}
+
+/* RecommandCSS 시작 */
+
+.RecommandSection {
+  width: 100%;
+  background-color: #f3f4f6;
+  padding: 1.5rem 1.25rem 5rem 1.25rem;
+}
+
+/* 오늘의 추천 여행지 */
+.RecommandSection_title {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-top: 1.5rem;
+  color: #1b1e28;
+}
+
+.RecommandSectionContents {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  cursor: pointer;
+  margin-top: 1.25rem;
+}
+
+.RecommandSectionContents_List {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.75rem;
+  padding: 1rem 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #000000;
+  background-image: linear-gradient(to bottom, #000000, #ffffff);
+}
+
+.followUp_NationWrap {
+  background: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  width: 6.875rem;
+}
+
+.followUp_Nation {
+  display: flex;
+  gap: 0.125rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.followUp_Nation_text {
+  color: #e8c746;
+  font-weight: bold;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1rem;
+  font-style: normal;
+}
+
+.countryFlexRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.countryImages {
+  width: 1.75rem;
+  height: 1.75rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+}
+
+.countryCommon {
+  width: 16rem;
+  color: #e8e9ea;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+
+.recommandInfoWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: start;
+}
+
+.recommandInfo {
+  color: #e8e9ea;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25rem;
+}
+.capital,
+.population {
+  color: #b8b9bc;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+/* 선택된 나라 */
+.selectedCountryWrap {
+  width: 100%;
+  padding: 1rem 1.25rem 1.25rem 1.5rem;
+}
+
+.selectedContents {
+  border: 1.5px solid #386937;
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 0.75rem;
+  display: flex;
+}
+
+.selectedContents.hasDeparted {
+  border: 1.5px solid #0e98f6;
+}
+
+.selectedContentsWrap {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.selectedImageWrap {
+  width: 5.75rem;
+  height: 5.75rem;
+  display: flex;
+  border-radius: 0.75rem;
+  box-shadow: 0.00625rem 0.00625rem 0.125rem 0rem;
+}
+.selectedImage {
+  width: 100%;
+  border-radius: 0.75rem;
+  object-fit: cover;
+}
+
+.selectedContentsInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.selectedTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.selectedCountry {
+  font-size: 1rem;
+  color: #1b1e28;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25rem;
+}
+.RecommendInfo {
+  align-self: stretch;
+  color: #66686f;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+.selectedRecommendInfo {
+  display: flex;
+  flex-direction: column;
+}
+.selectedRecommendInfo p {
+  color: #96989c;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+/* 데이터 바인딩 css */
+.FlagDataFlex {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.375rem;
+}
+
+.NationNames {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #1b1e28;
+}
+
+.DataTextCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.DataTextCol p {
+  color: #96989c;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1rem;
+  text-align: left;
+}
+
+.dataLabel {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #66686f;
+}
+
+.DataTextCol p {
+  color: #96989c;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+.ImageWrapper {
+  width: 1.375rem;
+  height: 1.375rem;
+  display: flex;
+  border-radius: 0.75rem;
+}
+
+.fetchImages {
+  width: 100%;
+  border-radius: 0.25rem;
+  object-fit: cover;
+  box-sizing: border-box;
+  border: 0.0625rem solid #000;
+}
+
+.selectedData {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.RecommandSectionContents_List {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.75rem;
+  padding: 1rem 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #000000;
+  position: relative;
+  overflow: hidden;
+}
+
+.RecommandSectionContents_List::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: blur(1px);
+  z-index: 1;
+}
+
+.RecommandSectionContents_List::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.RecommandSectionContents_List > * {
+  position: relative;
+  z-index: 3;
+}
+
+.ImageWrap {
+  width: 38px;
+}
+.ImageWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

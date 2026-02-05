@@ -1,0 +1,216 @@
+.btnWrap {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.Wrap {
+  padding-bottom: 30px;
+}
+.TitleLogoFlex {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+/*버튼 관련 속성*/
+.questionBtnStyleY {
+  width: 35%;
+  padding: 8px 16px;
+  border-radius: 0.5rem; /* 0.5rem is equivalent to 8px for rounded-lg */
+  opacity: 0.9;
+  border-width: 1px;
+  color: #089805;
+  font-weight: 600; /* This is equivalent to font-semibold */
+}
+.questionBtnStyleN {
+  width: 59%;
+  padding: 8px 16px;
+  border-radius: 0.5rem; /* 0.5rem is equivalent to 8px for rounded-lg */
+  opacity: 0.9;
+  border-width: 1px;
+  color: #089805;
+  font-weight: 600; /* This is equivalent to font-semibold */
+}
+
+.active {
+  border-color: #089805;
+  color: #089805;
+  opacity: 1;
+}
+
+.inactive {
+  border-color: #bebebe;
+  color: #bebebe;
+}
+
+.yesactive {
+  border-color: red;
+  color: red;
+}
+
+.QuestionBtnTwo {
+  display: flex;
+  gap: 9px;
+  width: 100%;
+}
+
+.p_QuestionText {
+  color: #1b1e28;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%; /* 22.4px */
+  margin-right: 3px;
+}
+.p_QuestionDes {
+  color: #96989c;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 140%; /* 16.8px */
+  width: 98%;
+}
+
+/*yes or no css */
+.allYesBox {
+  display: flex;
+  width: 335px;
+  padding: 20px 18px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  border: 2px solid #c8d4c8;
+  background: #fff;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 80px;
+  cursor: pointer;
+}
+
+.checkIcon {
+  border-radius: 100%; /* rounded-full style */
+  width: 20px;
+  padding: 2px 0.5px;
+  color: #96989c;
+}
+
+.p_allNocheck {
+  color: #1b1e28;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 133.333% */
+}
+
+/*AgreeTerms 레이아웃*/
+
+.aimated_div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 50;
+}
+
+.animated_div2 {
+  width: 100%;
+  height: auto;
+  padding: 30px 20px;
+  margin-top: 20px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px 12px 0px 0px;
+  width: 100%;
+  bottom: 0;
+  max-width: 100%;
+}
+@media screen and (min-width: 450px) {
+  .animated_div2 {
+    max-width: 440px;
+  }
+}
+
+/* fixed left-1/2 bg-white px-5 py-6 border shadow-md h-[auto] overflow-y-scroll rounded-t-lg scrollbar-hide w-[100%] bottom-0 md:w-[375px] */
+
+/*툴팁 레이아웃*/
+
+.tooltip {
+  display: flex;
+  position: relative;
+  top: 10px;
+  padding: 16px;
+  gap: 16px;
+  border-radius: 12px;
+  background: rgba(15, 28, 15, 0.9);
+  opacity: 1; /* 기본적으로 투명 */
+  width: 100%;
+}
+
+.tooltip-visible {
+  transition: opacity 1s ease-in-out;
+  opacity: 0; /* 보이는 상태 */
+}
+
+.toolTipBox {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  width: 100%;
+}
+
+.toolTipTxt {
+  display: block;
+}
+/* 약관동의 개별 항목 */
+
+.agreeTerms_select {
+  display: flex;
+  width: 100%;
+  padding: 10px 0;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.first_agreeTextBox {
+  display: flex;
+  width: 100%;
+  padding: 4px 0;
+  align-items: center;
+  gap: 8px;
+}
+
+/*텍스트*/
+.h3_agreeTitle {
+  color: #1b1e28;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.frist_agreeTitle {
+  color: #1b1e28;
+  font-family: "Pretendard Variable";
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 0;
+}
+.agreeText {
+  width: 100%;
+  text-align: left;
+  color: #66686f;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 166.667% */
+}
+
+.CheckBtn {
+  width: 100%;
+  background-color: #089805;
+}

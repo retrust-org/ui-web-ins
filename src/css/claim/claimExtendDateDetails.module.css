@@ -1,0 +1,329 @@
+.container {
+  width: 100%;
+}
+
+.containerWrap {
+  width: 100%;
+  padding: 0 20px;
+  margin-top: 36px;
+}
+
+.containerWrap h3 {
+  color: #1b1e28;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.contents {
+  width: 100%;
+  background-color: #ebf0eb;
+  border-radius: 12px;
+  margin-top: 36px;
+}
+
+.contentsWrap {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: #1b1e28;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+}
+
+.boundary {
+  margin: 16px 0;
+  height: 1px;
+  background-color: #c1d1c1;
+}
+
+.dataList {
+  width: 100%;
+}
+
+.dataList ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dataList ul li {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dataList ul li span {
+  color: #66686f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+.dataList ul li p {
+  color: #1b1e28;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+
+.confirmContents {
+  width: 100%;
+}
+.confirmWrap {
+  padding: 0 20px;
+}
+
+.confirmWrap h3 {
+  color: #1b1e28;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  margin-bottom: 24px;
+
+}
+
+.section {
+  width: 100%;
+  background-color: #ebf0eb;
+  border-radius: 12px;
+}
+
+.sectionWrap {
+  padding: 20px 16px;
+}
+
+.ContentsImgWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.ContentsImg {
+  width: 100%;
+  object-fit: cover;
+}
+
+.sectionWrap_title {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.sectionWrap_title p {
+  font-size: 16px;
+  color: #1b1e28;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+.dataContext {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  margin-top: 18px;
+}
+
+.dataContext p {
+  color: #494b53;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+.dataContext span {
+  padding: 4px 12px;
+  border-radius: 14px;
+  background-color: #fff;
+  color: #386937;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.section_DataContentsWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.dataFlexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.dataFlexbox p {
+  color: #66686f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.dataFlexbox span {
+  color: #1b1e28;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+/* 총 보험료*/
+.section_cost {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 18px;
+}
+
+.section_costWrap {
+  padding: 16px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.section_costWrap span {
+  flex-basis: 70%;
+  color: #386937;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: right;
+  margin-right: 4px;
+  flex-basis: 100%;
+}
+
+.section_costWrap p {
+  color: #386937;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 24px;
+  margin-left: 2px;
+  flex-basis: 80%;
+}
+
+.filterBtn {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.filterBtnWrap {
+  width: 100%;
+  margin: 20px 0;
+}
+.filterBtnWrap ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.filterBtnWrap ul li {
+  background-color: #f3f4f6;
+  color: #96989c;
+  border-radius: 10px;
+  padding: 10px 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.filterBtnWrap ul li.active {
+  background-color: #386937;
+  color: #fff;
+}
+.dataListWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.datalist_text {
+  color: #386937;
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 12px;
+  flex-basis: 8%;
+  margin-right: 8px;
+}
+.priceDatas {
+  display: flex;
+  flex-basis: 70%;
+}
+.dataList {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.imagePrice {
+  display: flex;
+  flex-basis: 32%;
+  align-items: center;
+}
+
+.imagePrice p {
+  display: flex;
+  flex-basis: 90%;
+  justify-content: flex-end;
+}
+
+.detailInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 16px;
+}
+
+.detailInfo p {
+  color: #1b1e28;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.TextFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dataFlexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.dataFlexCol p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: right;
+}
+
+

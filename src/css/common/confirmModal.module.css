@@ -1,0 +1,51 @@
+/* confirmModal.module.css */
+.animationContent {
+  width: 100%;
+  display: flex;
+  margin-bottom: 16px;
+  gap: 16px;
+  justify-content: space-between;
+  padding-top: 14px;
+}
+
+.animationContent h2 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1b2e28;
+  flex-basis: 90%;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.highlightTextContents {
+  margin-top: 20px;
+  border: 2px solid #f1f3f4;
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 20px 16px;
+  text-align: left;
+  height: 240px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.highlightTextContents::-webkit-scrollbar {
+  display: none;
+}
+
+.highlightTextContents span {
+  color: #66686f;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 180%;
+}
+
+@media screen and (min-width: 500px) {
+  .modal_bottom {
+    width: 440px;
+  }
+}

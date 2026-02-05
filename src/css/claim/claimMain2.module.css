@@ -1,0 +1,415 @@
+.mainContainer {
+  width: 100%;
+}
+
+.contentsHeader {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 6.3px -3px rgba(0, 0, 0, 0.25);
+}
+
+.headerWrap {
+  width: 100%;
+  padding: 26px 0;
+  padding-right: 20px;
+}
+
+.headerContent {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spacer {
+  width: 30%;
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  width: 160px;
+  object-fit: cover;
+}
+
+.LoginContents {
+  width: 25%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}
+
+.LoginContents img {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.sectionTop {
+  margin-top: 10px;
+}
+
+.sectionTopBanner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.sectionTopBanner img {
+  width: 90%;
+}
+
+.signUpContainer {
+  width: 100%;
+  padding: 0 4%;
+}
+
+.signUpContents {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.signUpcontentsBox {
+  flex: 1;
+  min-width: 0;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.09), 0px 3px 4px rgba(0, 0, 0, 0.12);
+  padding: 20px 4% 48px 4%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 24px;
+  cursor: pointer;
+  min-height: 170px;
+}
+
+.signUpcontentsBoxTitle {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.boxTitle {
+  flex-basis: 65%;
+}
+
+.signUpcontentsBoxTitle p {
+  color: #006227;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.signUpSpot {
+  width: auto;
+  min-width: fit-content;
+  background: #dbebe1;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  margin-top: 3px;
+}
+
+.signUpSpot span {
+  color: #387545;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.3px;
+  padding: 2px 8px;
+}
+
+.sectionMenu {
+  width: 100%;
+  margin-top: 60px;
+  padding-bottom: 28px;
+}
+
+.menuContents {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 1%;
+}
+
+.menuContentsTitle {
+  width: 100%;
+  padding-left: 4%;
+}
+
+.menuContentsTitle p {
+  width: 100%;
+  font-size: 20px;
+  color: #4d4d4d;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+}
+
+.gridContents {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+  padding: 26px 10px;
+  background-color: #f3f6fd;
+  border-radius: 22px;
+}
+
+.menuItem {
+  width: calc((100% - 24px) / 3);
+  aspect-ratio: 1;
+  border-radius: 25px;
+  cursor: pointer;
+  position: relative;
+  padding: 5% 4%;
+  background-color: #fff;
+  box-shadow: 0px 0px 6.3px rgba(0, 0, 0, 0.1);
+}
+
+.menuText {
+  color: #1e1e1e;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.menuIconWrapper {
+  position: absolute;
+  right: 8%;
+  bottom: 8%;
+}
+
+.menuIconWrapper img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.sectionService {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.serviceWrap {
+  width: 100%;
+  padding: 0 4%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.serviceTitle {
+  width: 100%;
+}
+
+.serviceTitle p {
+  color: #4d4d4d;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+}
+
+.serviceBtn {
+  width: 100%;
+}
+
+.serviceBtn ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.serviceBtn ul li {
+  border-radius: 20px;
+  padding: 10px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.serviceBtn ul li:nth-child(odd) {
+  color: white;
+  background-color: #7895fc;
+}
+
+.serviceBtn ul li:nth-child(even) {
+  color: #4d4d4d;
+  background-color: #f3f4f6;
+}
+
+.signUpcontentsDesc {
+  color: #828282;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.36px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 400px) {
+  .LoginContents {
+    gap: 12px;
+  }
+  .LoginContents img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .signUpContents {
+    gap: 8px;
+  }
+  .signUpcontentsBoxTitle p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .logo img {
+    width: 140px;
+  }
+
+  .LoginContents img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .signUpcontentsBoxTitle p {
+    font-size: 16px;
+  }
+
+  .signUpcontentsDesc {
+    font-size: 12px;
+    letter-spacing: -1px;
+  }
+
+  .signUpSpot span {
+    font-size: 9px;
+    padding: 2px 6px;
+  }
+
+  .menuContentsTitle p {
+    font-size: 16px;
+  }
+
+  .menuText {
+    font-size: 14px;
+  }
+
+  .menuIconWrapper {
+    right: 7%;
+    bottom: 7%;
+  }
+
+  .menuIconWrapper img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .menuItem {
+    padding: 4% 4%;
+  }
+
+  .serviceTitle p {
+    font-size: 16px;
+  }
+
+  .serviceBtn ul li {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .signUpContainer {
+    padding: 0 3%;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .logo img {
+    width: 120px;
+  }
+
+  .LoginContents {
+    gap: 12px;
+  }
+
+  .LoginContents img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .signUpContents {
+    gap: 8px;
+  }
+
+  .signUpcontentsBoxTitle {
+    gap: 4px;
+  }
+
+  .gridContents {
+    padding: 16px 4%;
+    gap: 6px;
+  }
+
+  .menuItem {
+    width: calc((100% - 12px) / 3);
+    padding: 4%;
+    border-radius: 16px;
+  }
+
+  .menuText {
+    font-size: 14px;
+  }
+
+  .menuIconWrapper {
+    right: 6%;
+    bottom: 6%;
+  }
+
+  .menuIconWrapper img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .serviceBtn ul {
+    gap: 6px;
+  }
+
+  .serviceBtn ul li {
+    font-size: 11px;
+    padding: 8px;
+    border-radius: 16px;
+  }
+
+  .signUpcontentsDesc {
+    font-size: 10px;
+  }
+}

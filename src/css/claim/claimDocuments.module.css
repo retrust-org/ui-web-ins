@@ -1,0 +1,325 @@
+.Contents {
+  width: 100%;
+  overflow: hidden;
+}
+
+.Contents h3 {
+  color: #1b1e28;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33.6px;
+}
+
+.ContentsWrap {
+  width: 100%;
+  padding: 0 20px;
+  margin-top: 24px;
+  margin-bottom: 36px;
+}
+.section:nth-child(1) {
+  border-top: 1px solid #e0e0e0; /* 원하는 색상 코드 입력 */
+}
+
+.section_1 {
+  width: 100%;
+}
+.sectionWrap_1 {
+  width: 100%;
+}
+
+.sectionContentsList {
+  width: 100%;
+  padding: 20px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ListWrapFlex {
+  border-bottom: 1px solid #e1e1e1;
+  width: 100%;
+}
+
+.sectionContentsList p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1b1e28;
+}
+@media screen and (min-width: 768) {
+  .sectionContentsList p {
+    font-size: 18px;
+  }
+}
+
+.sectionContentsList span {
+  font-size: 12px;
+  color: #386937;
+  background-color: #dbe5db;
+  padding: 2px 8px;
+  border-radius: 18px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: left;
+}
+
+.documentFlex {
+  display: flex;
+  gap: 8px;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.1s ease;
+}
+
+.rotateUp {
+  transform: rotate(0deg);
+  transition: transform 0.1s ease;
+}
+
+.acoddianBox {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s ease-out;
+}
+
+.acoddianBox.active {
+  height: auto;
+}
+
+.AcoddianListWrap {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.FirstAcoddianTextBox {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.SecondAcoddianTextBox {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-bottom: 20px;
+}
+
+.SecondAcoddianTextBox ul {
+  display: flex;
+}
+
+.Boundary {
+  background-color: #f3f4f6;
+  height: 12px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.sectionWrap3 {
+  padding: 0px 20px 20px 20px;
+}
+
+.btnFlex {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 40px;
+}
+
+.firstBtn {
+  background-color: #ebf0eb;
+  color: #386937;
+  padding: 16px 20px;
+  width: 100%;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.secondBtn {
+  background-color: #386937;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.sectionWrap3 p {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1b1e28;
+  font-weight: 600;
+}
+
+.sectionFlexCol {
+  display: flex;
+  flex-direction: column;
+  margin-top: 36px;
+}
+
+.sectionTextFlexRow {
+  display: flex;
+  gap: 4px;
+}
+
+.guideBtn {
+  background-color: #dbe5db;
+  border-radius: 18px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.FirstAcoddianTextBox ul li,
+.SecondAcoddianTextBox ul li {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+.amountRangeText {
+  font-size: 12px;
+  line-height: 22.4px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.FirstAcoddianTextBox h4 {
+  font-size: 14px;
+  color: #1b1e28;
+  line-height: 22.4px;
+  font-weight: 600;
+}
+.FirstAcoddianTextBox li {
+  color: #1b1e28;
+}
+
+.FileToUploadContents {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 26px;
+}
+
+.uploadFiles {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.uploadFiles span {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: #66686f;
+}
+
+.previewContents {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.imgWrap {
+  width: 100%;
+  height: 100%;
+}
+
+.uploadFile {
+  display: flex;
+  gap: 12px;
+}
+
+.empty {
+  width: 88px;
+  height: 88px;
+  border: 2px solid #f1f3f4;
+  border-radius: 12px;
+  display: flex;
+  position: relative;
+}
+
+.empty img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.previewContentsImages {
+  display: flex;
+  gap: 4px;
+}
+
+.deleteButton {
+  width: 20px;
+  height: 20px;
+  z-index: 200;
+  position: absolute;
+  left: 82%;
+  bottom: 80%;
+}
+
+.subtitle {
+  text-align: left;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #1b1e28;
+}
+
+.pdf {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.pdf ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  height: 100%;
+}
+
+.pdf ul li {
+  text-align: left;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #1b1e28;
+}
+
+.pdfContentsWrap {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.PDF_style {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px 4px;
+  border-radius: 12px;
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+  color: #1b2b3e;
+  font-weight: 500;
+  font-style: normal;
+}

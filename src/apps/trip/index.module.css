@@ -1,0 +1,279 @@
+/* index.module.css */
+
+.Contents {
+  background: linear-gradient(to bottom, #f8fffa 0%, #a8eabb 100%);
+  width: 100%;
+  padding: 0 20px;
+}
+
+.header {
+  padding-top: 15px;
+  padding-bottom: 26px;
+}
+
+.Title {
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 26px;
+  margin-bottom: 50px;
+}
+
+.imagesWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% + 8%);
+}
+.imagesWrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gridSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 120px 120px 120px;
+  column-gap: 14px;
+  row-gap: 13px;
+  width: 100%;
+  max-width: 440px;
+}
+
+.gridItem {
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0px 3px 7.2px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.tall {
+  grid-row: 1 / span 2;
+}
+
+.large {
+  grid-column: 1 / span 2;
+  margin-top: 4px;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+}
+
+.large .iconWrapper {
+  margin-bottom: 0;
+  margin-right: 16px;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  border-radius: 12px;
+  padding: 1px 12px;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  transform: translateY(-50%);
+}
+
+.best {
+  background-color: #4fc3f7;
+}
+
+.hot {
+  background-color: #ff8a80;
+}
+
+.new {
+  background-color: #4fc3f7;
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; /* 기본 마진값 10px로 설정 */
+}
+
+/* 해외여행에 대한 특별 설정 */
+.gridItem:nth-child(1) .iconWrapper {
+  margin-bottom: 16px;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 특정 아이콘에 대한 크기 조정 */
+.gridItem:nth-child(2) .icon {
+  width: 40px;
+  height: 39px;
+}
+
+.gridItem:nth-child(4) .icon {
+  width: 41px;
+  height: 41px;
+}
+
+/* 기본 카테고리 텍스트 스타일 */
+.categoryText {
+  text-align: center;
+  color: #000;
+  font-style: normal;
+  line-height: normal;
+}
+
+/* 장기체류, 출국 후 텍스트 스타일 */
+.gridItem:nth-child(2) .categoryText,
+.gridItem:nth-child(3) .categoryText {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.7px;
+}
+
+/* 해외여행 텍스트 스타일 */
+.gridItem:nth-child(1) .categoryText {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.9px;
+}
+
+/* 국내여행 텍스트 스타일 */
+.large .categoryText {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.9px;
+}
+
+.banner {
+  margin-top: 38px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+.footer {
+  padding-top: 80px;
+  position: relative;
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+/* 소형 기기(모바일)를 위한 미디어 쿼리 */
+@media screen and (max-width: 480px) {
+  .gridContainer {
+    grid-template-rows: 100px 100px 100px;
+    column-gap: 10px;
+    row-gap: 12px;
+    max-width: 360px;
+  }
+
+  .gridItem {
+    border-radius: 18px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .iconWrapper {
+    margin-bottom: 8px; /* 소형 기기 기본 마진값 */
+  }
+
+  .gridItem:nth-child(1) .iconWrapper {
+    margin-bottom: 12px; /* 소형 기기 해외여행 마진값 */
+  }
+  .large .iconWrapper {
+    margin-right: 12px;
+  }
+
+  /* 아이콘 크기 축소 */
+  .icon {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* 텍스트 크기 조정 */
+  .gridItem:nth-child(2) .categoryText,
+  .gridItem:nth-child(3) .categoryText {
+    font-size: 13px;
+  }
+
+  .gridItem:nth-child(1) .categoryText,
+  .large .categoryText {
+    font-size: 15px;
+  }
+
+  /* 뱃지 크기 조정 */
+  .badge {
+    font-size: 10px;
+    padding: 1px 10px;
+  }
+}
+
+/* 더 작은 모바일 기기를 위한 미디어 쿼리 */
+@media screen and (max-width: 360px) {
+  .gridContainer {
+    grid-template-rows: 90px 90px 90px;
+    column-gap: 8px;
+    row-gap: 10px;
+    max-width: 320px;
+  }
+
+  .iconWrapper {
+    margin-bottom: 6px; /* 더 작은 기기 기본 마진값 */
+  }
+
+  .gridItem:nth-child(1) .iconWrapper {
+    margin-bottom: 8px; /* 더 작은 기기 해외여행 마진값 */
+  }
+
+  .large .iconWrapper {
+    margin-right: 10px;
+  }
+
+  /* 아이콘 크기 더 축소 */
+  .icon {
+    width: 90%;
+    height: 90%;
+  }
+
+  .gridItem:nth-child(2) .icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 2px;
+  }
+
+  .gridItem:nth-child(4) .icon {
+    width: 33px;
+    height: 33px;
+  }
+
+  /* 텍스트 크기 더 조정 */
+  .gridItem:nth-child(2) .categoryText,
+  .gridItem:nth-child(3) .categoryText {
+    font-size: 12px;
+  }
+
+  .gridItem:nth-child(1) .categoryText,
+  .large .categoryText {
+    font-size: 14px;
+  }
+}

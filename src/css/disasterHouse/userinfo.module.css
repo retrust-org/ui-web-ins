@@ -1,0 +1,306 @@
+/* Container 스타일 */
+.container {
+  width: 100%;
+}
+
+/* Section 스타일 */
+.userinfoSection {
+  padding: 0 4%;
+}
+
+/* PC 사이즈에서 패딩 증가 */
+@media (min-width: 768px) {
+  .userinfoSection {
+    padding: 0 6%;
+  }
+}
+
+/* 제목 스타일 */
+.userinfoSection h1 {
+  color: #050505;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 40px 0;
+}
+
+/* 라벨 스타일 */
+label {
+  color: #4a4a4a;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* Input Wrap 스타일 */
+.inputWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+/* Input 기본 스타일 */
+.inputWrap input {
+  border-radius: 10px;
+  background: var(--gray1, #f3f4f6);
+  border: none;
+  padding: 14px 16px;
+  flex: 1;
+  min-width: 0;
+}
+
+/* 이름 입력 필드 (단일) */
+.inputName {
+  width: 100%;
+  flex: none;
+}
+
+/* 주민번호 영역 스타일 */
+.ResidentNum {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ResidentNum input:first-child {
+  flex: 0.8;
+  min-width: 0;
+}
+
+.ResidentNum input:last-child {
+  flex: 1.2;
+  min-width: 0;
+}
+
+/* Line 스타일 */
+.line {
+  width: 12px;
+  height: 2px;
+  background: #4d4d4d;
+  stroke-width: 2px;
+  stroke: #4d4d4d;
+}
+
+/* 휴대폰 번호 영역 스타일 */
+.phoneNum {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.phoneNum select {
+  flex: 0.4;
+  min-width: 0;
+  border-radius: 10px;
+  background: var(--gray1, #f3f4f6);
+  border: none;
+  padding: 12px 16px;
+  color: #050505;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  background-image: url("../../assets/DownChk.svg");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px 16px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.phoneNum select:focus {
+  outline: none;
+  background-color: var(--gray2, #e5e7eb);
+  background-image: url("../../assets/DownChk.svg");
+}
+
+.phoneNum input {
+  flex: 1;
+  min-width: 0;
+}
+
+/* 이메일 영역 스타일 */
+.emailAddress {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.emailAddress input {
+  flex: 1;
+  min-width: 0;
+}
+
+.emailAddress p {
+  margin: 0;
+  color: #4a4a4a;
+  font-weight: 600;
+  flex: 0 0 auto;
+}
+
+.emailAddress select {
+  flex: 0 0 auto;
+  min-width: 160px;
+  border-radius: 10px;
+  background: var(--gray1, #f3f4f6);
+  border: none;
+  padding: 14px 16px;
+  color: #050505;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  background-image: url("../../assets/DownChk.svg");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px 16px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.emailAddress select:focus {
+  outline: none;
+  background-color: var(--gray2, #e5e7eb);
+  background-image: url("../../assets/DownChk.svg");
+}
+
+.fullEmail {
+  flex: 1;
+  min-width: 0;
+}
+
+/* 모달 닫기 버튼 스타일 */
+.closeButton {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding-bottom: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* 모달 컨텐츠 스타일 */
+.modalContent {
+  width: 100%;
+}
+
+.modalContent h2 {
+  color: #000;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+
+.subTitle {
+  color: #828282;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.54px;
+  margin-bottom: 80px;
+}
+
+.modalButtons {
+  display: flex;
+  gap: 12px;
+}
+
+.modalButtons button {
+  flex: 1;
+  padding: 16px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.modalButtons button:first-child {
+  border-radius: 12px;
+  background: var(--disable, #c3d2c3);
+  color: #4a4a4a;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.modalButtons button:last-child {
+  border-radius: 12px;
+  background: var(--Main, #386937);
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* SecureKeyboard용 CustomBorderInput 커스텀 스타일 */
+.customSecureInput {
+  flex: 1.2;
+  min-width: 0;
+}
+
+/* 더 구체적인 선택자로 우선순위 높이기 */
+.ResidentNum .customSecureInput :global(div[class*="borderedInputBox"]) {
+  padding: 14px 16px;
+  border: none;
+  background: var(--gray1, #f3f4f6);
+  border-radius: 10px;
+}
+
+.ResidentNum .customSecureInput :global(div[class*="borderedInputBox"]:focus-within),
+.ResidentNum .customSecureInput :global(div[class*="borderedInputBox"][class*="focused"]) {
+  padding: 14px 16px;
+  border: none;
+  background: var(--gray1, #f3f4f6);
+  box-shadow: none;
+}
+
+.ResidentNum .customSecureInput :global(input[class*="borderedInput"]) {
+  background: transparent;
+  color: #050505;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0;
+}
+
+/* BusinessInfo 전용 스타일 */
+.businessSection {
+  padding: 0 4%;
+}
+
+.businessSection h1 {
+  color: #050505;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 40px 0;
+}
+
+.businessSelect {
+  width: 100%;
+  border-radius: 10px;
+  background: var(--gray1, #f3f4f6);
+  border: none;
+  padding: 14px 16px;
+  color: #050505;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  background-image: url("../../assets/DownChk.svg");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px 16px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.businessSelect:focus {
+  outline: none;
+  background-color: var(--gray2, #e5e7eb);
+}

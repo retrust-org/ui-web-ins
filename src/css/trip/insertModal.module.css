@@ -1,0 +1,158 @@
+/* modalLayOut.module.css */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1000;
+}
+
+.modal_bottom {
+  background: white;
+  width: 100%;
+  border-radius: 24px 24px 0 0;
+  padding: 24px 20px;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modalOverlay_enter_active {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.modalOverlay_exit_active {
+  animation: fadeOut 0.3s ease-in;
+}
+
+.modal_bottom_enter_active {
+  animation: slideUp 0.3s ease-out;
+}
+
+.modal_bottom_exit_active {
+  animation: slideDown 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+/* insertModal.module.css */
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 8px;
+  padding-top: 10px;
+}
+
+.title {
+  color: var(--Schemes-On-Surface-Variant, #3f484a);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  width: 100%;
+}
+
+.contentContainer {
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.description {
+  color: #6f797a;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 24px;
+}
+
+.description:last-child {
+  margin-bottom: 0;
+}
+
+.optionsList {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.optionsList li {
+  flex-basis: 50%;
+  border-radius: 12px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  list-style: none;
+  padding: 18px 32px;
+  text-align: center;
+  transition: opacity 0.2s ease;
+}
+
+.optionsList li:hover {
+  opacity: 0.9;
+}
+
+.optionsList li:nth-child(1) {
+  background: #e7f6fd;
+  color: #0e98f6;
+}
+
+.optionsList li:nth-child(2) {
+  background: #0e98f6;
+  color: #fff;
+}
+
+.commonX {
+  width: fit-content;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.commonX img {
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.2s ease;
+}
+

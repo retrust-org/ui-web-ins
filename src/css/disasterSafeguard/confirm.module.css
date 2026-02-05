@@ -1,0 +1,161 @@
+.confirmContainer {
+  width: 100%;
+}
+
+.confirmSection {
+  margin-top: 20px;
+  width: 100%;
+  padding: 0 4%;
+  padding-bottom: 100px;
+}
+
+.confirmSection h2 {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+
+.cardContents {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cardbox {
+  width: 100%;
+  padding: 20px 16px;
+  background-color: #f3f4f6;
+  border-radius: 17px;
+}
+
+.cardbox h3 {
+  color: #4a4a4a;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 22px;
+}
+
+.pricedata {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.cardbox ul {
+  width: 100%;
+}
+
+.cardbox ul li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.cardbox ul li:last-child {
+  margin-bottom: 0;
+}
+
+.cardbox ul li p {
+  color: #4a4a4a;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  flex-shrink: 0;
+}
+
+.cardbox ul li span {
+  color: #4a4a4a;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: right;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.boundaryWrap {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.boundary {
+  height: 1px;
+  background: rgba(74, 74, 74, 0.39);
+}
+
+.buttonWrap {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.buttonWrap button {
+  padding: 6px 12px;
+  width: fit-content;
+  color: #6b6b6b;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.12px;
+  border-radius: 8px;
+  background: rgba(154, 171, 159, 0.37);
+}
+
+/* 첫 번째 cardbox (보험정보)만 왼쪽 정렬 */
+.cardbox.insuranceInfo ul li {
+  justify-content: start;
+}
+
+.cardbox.insuranceInfo ul li p {
+  flex-basis: 30%;
+}
+
+/* 보험료 상세 정보 */
+.premiumDetail {
+  justify-content: space-between !important;
+}
+
+
+
+.premiumDetail p,
+.premiumDetail span {
+  color: #828282;
+  font-size: 14px;
+}
+
+.premiumDetail p {
+  flex: 1;
+}
+
+.premiumDetail.lastItem {
+  border-bottom: 1px solid rgba(74, 74, 74, 0.2);
+  padding-bottom: 12px;
+}
+
+/* 사업장소재지 특별 스타일 */
+.cardbox ul li.businessAddress {
+  align-items: flex-start;
+}
+
+.cardbox ul li.businessAddress p {
+  min-width: 100px;
+  flex-shrink: 0;
+}
+
+.cardbox ul li.businessAddress span {
+  flex: 1;
+  max-width: calc(100% - 110px);
+  line-height: 1.4;
+}

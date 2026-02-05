@@ -1,0 +1,26 @@
+ <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <g id="ICON/COMMON/ETC/ic_common_etc_download">
+              <path
+                id="Rectangle 40935"
+                d="M8.5 9H6V19H18V9H15.5"
+                stroke="#1B1E28"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                id="Vector 1221"
+                d="M12 4V14.5M12 14.5L9.5 12M12 14.5L14.5 12"
+                stroke="#1B1E28"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </g>
+          </svg>

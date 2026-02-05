@@ -1,0 +1,177 @@
+ul, ol, li {
+  list-style: none;
+}
+
+.footers {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid #eeeeee;
+}
+
+.footersWrap {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.footerHeader {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  padding: 0 4%;
+  justify-content: space-between;
+}
+
+.companyInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: start;
+  align-items: start;
+}
+
+.companyInfo2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  justify-content: start;
+  align-items: start;
+}
+
+.companyInfo p:nth-child(1) {
+  color: #7e7e7e;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.54px;
+}
+
+.companyInfo p:nth-child(2) {
+  color: #4d4d4d;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.4px;
+}
+
+.companyInfo2 span {
+  color: #4d4d4d;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: -0.24px;
+}
+
+.boundary {
+  width: 100%;
+  height: 1px;
+  background-color: #eeeeee;
+}
+
+.boundaryWrap {
+  padding: 25px 0;
+}
+
+.footerListwrap {
+  width: 100%;
+  padding: 0 4%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerList p {
+  color: #7e7e7e;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.54px;
+}
+
+.footerList ul {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.footerList ul li {
+  color: #4d4d4d;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.footerList img {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.toggleIcon {
+  transition: transform 0.3s ease;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+.footerBody {
+  width: 100%;
+}
+
+.footerBody p {
+  color: #4d4d4d;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.hiddenContent {
+  max-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  transition: max-height 0.2s cubic-bezier(0, 1, 0, 1);
+  margin-top: 0;
+  opacity: 0;
+  transition-property: max-height, opacity, margin-top;
+  transition-duration: 0.2s, 0.2s, 0.2s;
+  transition-timing-function: cubic-bezier(0, 1, 0, 1), ease, ease;
+}
+
+.expanded .hiddenContent {
+  max-height: 240px;
+  margin-top: 18px;
+  opacity: 1;
+  transition: max-height 0.25s cubic-bezier(0.4, 0, 1, 1), opacity 0.2s ease,
+    margin-top 0.2s ease;
+}
+
+.copyright {
+  margin-top: 10px;
+}
+
+.copyright p {
+  color: #666;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.7px;
+}
+
+@media screen and (max-width: 768px) {
+  .footersWrap{
+    padding-bottom: 40px;
+  }
+
+}

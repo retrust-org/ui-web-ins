@@ -1,0 +1,219 @@
+.section {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.container {
+  width: 100%;
+  padding: 0 4%;
+}
+
+.title {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.title h1 {
+  color: #1b1e28;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 33.6px */
+}
+
+.title h1 span {
+  font-weight: 700;
+  color: #1b1e28;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 140%; /* 33.6px */
+}
+
+.purposeGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.topRow,
+.bottomRow {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.purposeOption {
+  width: 146px;
+  height: 146px;
+  box-shadow: 0 2px 6px rgba(12, 12, 12, 0.2); /* 모든 방향으로 퍼지는 그림자 */
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.purposeOption.selected {
+  border: 2px solid #386937;
+}
+
+.optionContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.optionContent p {
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.optionContent img {
+  max-width: 40%;
+  height: auto;
+}
+
+.lineWrap {
+  width: 100%;
+  margin-top: 46px;
+  margin-bottom: 10px;
+}
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #dadada;
+}
+
+/* 기존 CSS는 그대로 유지 */
+
+.announceWrap {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.announceContainer {
+  border-radius: 10px;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.checkAnnounce {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding-bottom: 26px;
+}
+
+.checkAnnounce p {
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+}
+
+.rotateArrow {
+  transform: rotate(180deg);
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.checkAnnounce img {
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* 리스트 숨김/표시 스타일 - 부드러운 아코디언 효과 */
+.hideAnnouncement {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0;
+  padding: 0;
+}
+
+.showAnnouncement {
+  max-height: 500px; /* 충분히 큰 값으로 설정 */
+  transition: max-height 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  padding-bottom: 20px; /* 아래 여백 추가 */
+  padding-top: 5px; /* 위 여백 추가 */
+}
+
+.announceContainer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  transform-origin: top;
+}
+
+.announceContainer li {
+  margin-bottom: 14px;
+  color: #7d7d7d;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 480px) {
+  .purposeOption {
+    width: calc((85% - 12px) / 2);
+
+    padding-bottom: calc((85% - 12px) / 2);
+    position: relative;
+  }
+
+  /* .topRow .purposeOption {
+    width: calc((100% - 12px) / 2);
+    padding-bottom: calc((100% - 12px) / 2);
+  } */
+
+  .optionContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .optionContent p {
+    font-size: 14px;
+  }
+}
+
+/* 태블릿 환경 */
+@media (min-width: 481px) and (max-width: 768px) {
+  .purposeOption {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/* 더 작은 모바일 화면 */
+@media (max-width: 320px) {
+  .bottomRow {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .purposeOption {
+    width: 80%;
+    height: 0;
+    padding-bottom: 80%;
+  }
+
+  .topRow .purposeOption {
+    width: 80%;
+    padding-bottom: 80%;
+  }
+}

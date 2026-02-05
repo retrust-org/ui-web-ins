@@ -1,0 +1,109 @@
+.aimated_div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animated_div2 {
+  position: relative;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 440px;
+  z-index: 997;
+}
+
+.modalWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 60px;
+  border-radius: 12px;
+  background: #fff;
+  z-index: 996;
+}
+
+.closeBOX {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.spotsBox {
+  display: flex;
+  gap: 8px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.closeIcon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.h3_Finish {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 28px;
+  color: #1b1e28;
+  margin-bottom: 12px;
+  margin-top: 20px;
+}
+
+.middleText {
+  color: #386937;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration-line: underline;
+  margin-bottom: 8px;
+}
+
+.bottomText {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.circle {
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.circle1 {
+  animation-name: loadingAnimation;
+}
+
+.circle2 {
+  animation-name: loadingAnimation;
+  animation-delay: 0.33s;
+}
+
+.circle3 {
+  animation-name: loadingAnimation;
+  animation-delay: 0.67s;
+}
+
+@keyframes loadingAnimation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}

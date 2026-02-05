@@ -1,0 +1,145 @@
+.dateContainer,
+.tripContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dateContainer {
+  margin-top: 20px;
+}
+
+.dateContainerTitle,
+.tripContainerTitle {
+  color: #5c5c5c;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 136.077%;
+}
+
+.boundaryLine {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.line {
+  background-color: #f1f1f1;
+  height: 10px;
+  margin: 0 -4%;
+  width: calc(100% + 8%);
+}
+
+.downloadSection {
+  width: 100%;
+}
+
+.btnWrap {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.downloadButton {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 0;
+  border-radius: 12px;
+  border: 1px solid #96989c;
+  position: relative;
+}
+
+.downloadButton img {
+  position: absolute;
+  left: 25%;
+  width: 16px;
+  height: 16px;
+}
+
+.downloadButton p {
+  color: #676767;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* 업로드 컨테이너 */
+.uploadContainer {
+  width: 100%;
+}
+
+/* 드래그 앤 드롭 영역 */
+.uploadArea {
+  position: relative;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+/* PC 버전에서만 드래그 시 시각적 효과 적용 */
+@media screen and (min-width: 769px) {
+  .uploadArea.dragOver .uploadBtn img {
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #f3f3f3;
+  }
+}
+
+.uploadBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 8px;
+}
+
+.uploadBtn img {
+  transition: all 0.3s ease;
+}
+
+.uploadBtn p {
+  color: #5c5c5c;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 136.077%; /* 21.772px */
+}
+
+/* 업로드된 파일 정보 */
+.uploadedFile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding: 12px;
+  background-color: #e8f5e8;
+  border-radius: 8px;
+  border: 1px solid #31702f;
+}
+
+.uploadedFile span {
+  color: #1b1e28;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.removeBtn {
+  padding: 4px 12px;
+  background-color: #e86565;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .dateContainer p,
+  .tripContainer p {
+    font-size: 14px;
+  }
+}

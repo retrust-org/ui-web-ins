@@ -1,0 +1,100 @@
+.completeContainer {
+  position: relative;
+  padding: 20px;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.completeSection {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.iconWrapper {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.iconWrapper img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.completeSection h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.completeSection p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.certificateButton {
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #386937;
+  color: white;
+  border: none;
+}
+
+.certificateButton:hover {
+  background: #2d5429;
+}
+
+.nftButton {
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: transparent;
+  color: #386937;
+  border: 1px solid #386937;
+}
+
+.nftButton:hover {
+  background: #e8f5e9;
+}
+
+.homeLinkWrapper {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.homeLink {
+  color: #386937;
+  border-bottom: 1px solid #386937;
+  cursor: pointer;
+  font-size: 16px;
+}

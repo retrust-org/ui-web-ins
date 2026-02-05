@@ -1,0 +1,48 @@
+.safetyHeaderContainer {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.safetyHeaderContainer.highZIndex {
+  z-index: 1100;
+}
+
+.safetyHeaderContent {
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 23px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.backButton {
+  position: absolute;
+  left: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backButton:hover {
+  opacity: 0.7;
+}
+
+.safetyHeaderTitle {
+  color: #4a4a4a;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}

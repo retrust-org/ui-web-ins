@@ -1,0 +1,29 @@
+/* claimButton.module.css */
+.claimButtonContainer {
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.claimButton {
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  padding: 1.1rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1.5;
+  transition: background-color 0.3s ease;
+}
+
+.claimButton:disabled {
+  cursor: not-allowed;
+}

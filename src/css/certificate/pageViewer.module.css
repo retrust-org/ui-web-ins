@@ -1,0 +1,153 @@
+/* src/css/certificate/pageViewer.module.css */
+.pdfViewerContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  z-index: 9999;
+  max-width: none !important;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* iOS Safari 전용 수정 */
+@supports (-webkit-touch-callout: none) {
+  .pdfViewerContainer {
+    height: -webkit-fill-available;
+  }
+}
+
+.pdfContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.pdfFrame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  object-fit: contain;
+}
+
+/* iOS 전용 PDF 뷰어 스타일 */
+.iosPdfWrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.iosEmbed {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: visible;
+  display: block;
+  z-index: 2;
+}
+
+.fallbackContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: -1;
+}
+
+.objectPdf,
+.embedPdf {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* iframe이 작동하지 않을 때 fallback 표시 */
+.pdfFrame:not(:empty) + .fallbackContainer {
+  display: none;
+}
+
+.pdfFrame:empty + .fallbackContainer {
+  display: block;
+  z-index: 1;
+}
+
+/* 다운로드 메시지 스타일 */
+.downloadMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.downloadMessage p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* 모바일 기기를 위한 미디어 쿼리 */
+@media only screen and (max-width: 768px) {
+  .pdfFrame,
+  .objectPdf,
+  .embedPdf {
+    width: 100%;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* iOS PDF 미리보기가 제대로 렌더링되도록 보장 */
+  .iosPdfWrapper {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .downloadMessage p {
+    font-size: 14px;
+  }
+}
+
+/* 작은 모바일 화면(특히 아이폰)을 위한 추가 조정 */
+@media only screen and (max-width: 480px) {
+  .pdfContent {
+    padding: 0;
+  }
+
+  /* SafeArea 대응 */
+  .pdfViewerContainer {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right)
+      env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+
+  /* iOS PDF 스크롤 개선 */
+  .iosPdfWrapper {
+    height: calc(100% - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+    overflow-y: auto;
+  }
+
+  .downloadMessage {
+    padding: 15px;
+  }
+}

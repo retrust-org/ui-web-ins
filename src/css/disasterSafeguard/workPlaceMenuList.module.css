@@ -1,0 +1,105 @@
+/* workPlaceMenuList.module.css */
+.modalContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cancel {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.cancel img {
+  width: 20px;
+  height: 20px;
+}
+
+.modalContainer h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.menuListContainer {
+  max-height: 52vh; /* 뷰포트 높이의 60%까지만 표시 */
+  overflow-y: auto; /* 높이를 넘어가면 스크롤 표시 */
+  padding-right: 10px; /* 스크롤바 공간 확보 */
+}
+
+.menuList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuList li {
+  padding: 15px 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.menuList li:last-child {
+  border-bottom: none;
+}
+
+.menuList li:hover {
+  background-color: #f9f9f9;
+}
+
+/* 스크롤바 스타일 커스터마이징 */
+.menuListContainer::-webkit-scrollbar {
+  width: 6px;
+}
+
+.menuListContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.menuListContainer::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.menuListContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* 모바일 반응형 스타일 (768px 이하) */
+@media screen and (max-width: 768px) {
+  .modalContainer h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .menuList li {
+    padding: 13px 8px;
+    font-size: 15px;
+  }
+}
+
+/* 작은 모바일 디바이스 (344px 이하) */
+@media screen and (max-width: 344px) {
+  .modalContainer h3 {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+
+  .menuList li {
+    padding: 12px 8px;
+    font-size: 14px;
+  }
+
+  .menuListContainer {
+    padding-right: 8px;
+  }
+
+  /* 스크롤바 크기 조정 */
+  .menuListContainer::-webkit-scrollbar {
+    width: 4px;
+  }
+}

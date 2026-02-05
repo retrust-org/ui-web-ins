@@ -1,0 +1,73 @@
+/* Container */
+.container {
+  width: 100%;
+}
+
+/* Section */
+.section {
+  padding: 0 4%;
+  padding-bottom: 100px;
+  margin-top: 20px;
+}
+
+/* Title */
+.title {
+  color: #4a4a4a;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+/* Document Item */
+.docItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 16px;
+  border-radius: 12px;
+  border: 1px solid #9C9C9C;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.docItem:hover {
+  background-color: #f9f9f9;
+}
+
+.docItem:last-child {
+  margin-bottom: 0;
+}
+
+/* Active 상태 */
+.docItem.active {
+  border: 1px solid #386937;
+}
+
+/* Checkbox */
+.checkbox {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+/* Document Text */
+.docText {
+  color: #4a4a4a;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* PC 사이즈 대응 */
+@media (min-width: 768px) {
+  .section {
+    padding: 0 6%;
+    max-width: 600px;
+    margin: 20px auto 0;
+  }
+}

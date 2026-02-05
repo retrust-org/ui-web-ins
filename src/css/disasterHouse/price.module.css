@@ -1,0 +1,161 @@
+.priceSection {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.priceSectionWrap {
+  width: 100%;
+  padding: 0 4%;
+}
+
+.priceSectionWrap h2 {
+  color: #050505;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 26px;
+}
+
+.priceSectionWrap ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 11px 16px;
+  justify-content: space-between;
+  border-radius: 8px;
+  border: 1px solid #bfbfbf;
+  margin-bottom: 30px;
+}
+
+.priceSectionWrap ul li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.priceSectionWrap ul li p {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.priceSectionWrap ul li span {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.priceContents {
+  padding: 30px 4%;
+  border-radius: 24px;
+  background: #f3f4f6;
+  min-height: 400px;
+  width: 100%;
+}
+
+.priceContentsWraps {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.priceContentsTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.priceMainTitle {
+  color: #4a4a4a;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.priceSubTitle {
+  color: #238021;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.pricePayContents {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricePayWrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.pricePayWrap span {
+  color: #386937;
+  text-align: center;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-bottom: 2px solid #000;
+  flex-basis: 65%;
+  padding-bottom: 4px;
+}
+
+.pricePayWrap p {
+  color: #000;
+  text-align: right;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.maxPay {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 6px;
+  padding-top: 14px;
+}
+
+.maxPay p:nth-child(1) {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1.4px;
+}
+
+.maxPay p:nth-child(2) {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.priceInput {
+  color: #386937;
+  text-align: center;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  border-bottom: 2px solid #000;
+  flex: 0 0 65%;
+  width: 65%;
+  padding-bottom: 4px;
+  background: transparent;
+  outline: none;
+}

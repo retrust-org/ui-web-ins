@@ -1,0 +1,161 @@
+.H3_title {
+  width: 100%;
+  color: #1b1e28;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.highlight {
+  color: #386937;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.hasDeparted {
+  color: #0e98f6;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+.inputWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.inpuLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.memberForm {
+  display: flex;
+  width: 100%;
+  margin-top: 36px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.identifyNum {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.styledLabel {
+  color: #66686f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+
+/*input style*/
+.styledInputBox {
+  display: flex;
+  width: 100%;
+  padding: 16px;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  background: #f3f4f6;
+}
+
+.styledInput {
+  background: #f3f4f6;
+  color: #1b1e28;
+}
+/* 동반인 코드 */
+
+.companionForm {
+  width: 100%;
+}
+
+.filterButtonWrap {
+  display: flex;
+  cursor: pointer;
+  padding: 0 20px;
+  margin-top: 20px;
+  gap: 10px;
+  align-items: center;
+}
+
+.filterButton {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.filterButton p {
+  color: #1b1e28;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.styledInput:focus {
+  outline: none;
+}
+
+input::placeholder {
+  font-size: 14px;
+  color: #999;
+}
+
+.styledInputBox:focus-within .styledInput {
+  border-color: #386937; /* 포커스 시 border 색상 변경 */
+}
+
+.styledInputBox.departed:focus-within {
+  border-color: #0e98f6;
+}
+
+.readOnly .styledInput {
+  cursor: default;
+}
+
+.readOnly .styledInput:focus {
+  cursor: default; /* readOnly일 때 포커스 시 커서 숨김 */
+}
+
+/* 추가한 부분 */
+.styledInputBox.readOnly {
+  cursor: default;
+}
+
+.styledInputBox.readOnly .styledInput::selection {
+  background-color: transparent; /* readOnly일 때 선택 시 배경색 제거 */
+}
+.styledInputBox.readOnly .styledInput::-moz-selection {
+  background-color: transparent; /* Firefox용 선택 시 배경색 제거 */
+}
+
+.firstIndentify {
+  flex-basis: 40%;
+}
+
+.secondIndentify {
+  flex-basis: 60%;
+}
+
+.membersForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+}

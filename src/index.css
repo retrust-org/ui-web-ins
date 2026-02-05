@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0 !important;
+}
+
+.slick-arrow {
+  display: none !important;
+}
+
+@media (min-width: 500px) {
+  .commonModal {
+    max-width: 440px;
+  }
+}
+
+@media (min-width: 500px) {
+  .MuiPaper-root.MuiDialog-paper {
+    max-width: 440px;
+  }
+}
+
+.slick-list {
+  width: 100%;
+  visibility: visible !important;
+}
+
+.claimMainSlick_sliderContainer__Ii2Vg {
+  height: 0 !important;
+}
+
+.slick-track {
+  width: 5000px !important;
+  display: flex !important;
+}
+
+.slick-slide {
+  margin-right: 10px; /* 슬라이드 간격 설정 */
+}
+
+.MuiDateCalendar-root,
+.css-1dsmaog {
+  overflow: visible !important;
+  max-height: 400px !important;
+  height: 400px !important;
+  margin: 0px auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+}
+.css-1xuxf2l {
+  overflow: visible !important;
+}
+.css-i6bazn {
+  overflow: visible !important;
+}
+
+.MuiDayCalendar-monthContainer,
+.MuiPickersSlideTransition-root {
+  overflow: visible !important;
+}
+.MuiPickersDay-root {
+  border: none !important;
+}
+@media screen and (min-width: 768px) {
+  .MuiDateCalendar-root,
+  .css-1dsmaog {
+    max-height: 420px !important;
+    height: 420px !important;
+  }
+}

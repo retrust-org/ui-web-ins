@@ -1,0 +1,39 @@
+.buttonContents {
+  width: 100%;
+  position: relative;
+}
+
+.buttonWrapper {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  max-width: 440px;
+  padding: 0 20px;
+  z-index: 10;
+}
+
+.safetyButton {
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1.5;
+  background-color: #386937;
+}
+
+.safetyButton.disabled,
+.safetyButton:disabled {
+  background-color: rgb(195, 210, 195);
+  color: white;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 334px) {
+  .safetyButton {
+    padding: 0.9rem;
+  }
+}

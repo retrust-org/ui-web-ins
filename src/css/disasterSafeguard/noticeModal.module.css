@@ -1,0 +1,125 @@
+.noticeModalContent {
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.title {
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1.4;
+}
+
+.description {
+  margin-bottom: 32px;
+}
+
+.mainText {
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+}
+
+.subText {
+  color: #666;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+}
+
+.notice {
+  display: block;
+  color: #386937;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+  padding-top: 8px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 8px;
+}
+
+.reSearchButton {
+  flex: 1;
+  padding: 16px 0;
+  background-color: white;
+  color: #386937;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #386937;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.reSearchButton:hover {
+  background-color: #e8f5e9;
+}
+
+.reSearchButton:active {
+  background-color: #c8e6c9;
+}
+
+.continueButton {
+  flex: 1;
+  padding: 16px 0;
+  background-color: #386937;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.continueButton:hover {
+  background-color: #2e5a2d;
+}
+
+.continueButton:active {
+  background-color: #254b23;
+}
+
+@media screen and (max-width: 768px) {
+  .noticeModalContent {
+    padding: 32px 20px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    margin-bottom: 28px;
+  }
+
+  .mainText {
+    font-size: 15px;
+    margin-bottom: 14px;
+  }
+
+  .subText {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .notice {
+    font-size: 12px;
+    padding-top: 6px;
+  }
+
+  .reSearchButton,
+  .continueButton {
+    padding: 14px 0;
+    font-size: 15px;
+  }
+}

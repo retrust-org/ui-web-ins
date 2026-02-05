@@ -1,0 +1,27 @@
+.LogoBox {
+    padding: 36px 20px 0 20px;
+}
+
+h1 {
+    color: var(--Gray-Gray-500, #1b1e28);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+}
+h2 {
+    color: var(--Gray-Gray-500, #1b1e28);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+}
+
+._404Img {
+    display: flex;
+    width: 440px;
+    height: 428px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}

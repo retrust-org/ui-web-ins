@@ -1,0 +1,427 @@
+#container {
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.floor {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.floor h2 {
+  margin-top: 40px;
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+
+.floor p {
+  color: #4a4a4a;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+
+.searchFloor {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  border: 1px solid #bfbfbf;
+  padding: 12px 22px;
+  margin-top: 60px;
+}
+
+.searchFloor img {
+  width: 31px;
+  height: 31px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+}
+
+.searchInput {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #313131;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.searchInput::placeholder {
+  color: #313131;
+}
+
+.floorList {
+  margin-top: 22px;
+  height: 400px; /* 고정 높이 설정 */
+  overflow-y: auto; /* 스크롤 추가 */
+  padding-bottom: 80px; /* 하단 버튼 영역 확보 */
+}
+
+/* 스크롤바 스타일링 */
+.floorList::-webkit-scrollbar {
+  width: 8px;
+}
+
+.floorList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.floorList::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.floorList::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.floorList ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 10px; /* 스크롤바 공간 확보 */
+}
+
+.floorList ul li {
+  color: #4a4a4a;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 12px;
+  background: #f3f4f6;
+  padding: 16px;
+  cursor: pointer; /* 클릭 가능함을 표시 */
+}
+
+.floorList ul li.active {
+  border: 1.5px solid #386937;
+  background: #ebf0eb;
+}
+
+/* 기존 CSS에 아래 내용 추가 */
+
+.unitGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+  overflow-y: auto;
+}
+
+.unitItem {
+  color: #4a4a4a;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 20px;
+  background: #f3f4f6;
+  padding: 14px;
+}
+
+.unitItem:hover {
+  background: #eaeaea;
+}
+
+.unitItem.active {
+  border: 1.5px solid #386937;
+  background: #ebf0eb;
+}
+
+.noData {
+  grid-column: span 4;
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+/* 스크롤바 스타일링 */
+.unitGrid::-webkit-scrollbar {
+  width: 8px;
+}
+
+.unitGrid::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.unitGrid::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.unitGrid::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.backButton {
+  display: block;
+  margin: 20px auto 0;
+  background: transparent;
+  border: none;
+  color: #386937;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.backButton:hover {
+  background-color: rgba(56, 105, 55, 0.1);
+}
+
+/* 선택된 호실 컨테이너 */
+.selectedUnitsContainer {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.selectedUnitsContainer h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #495057;
+}
+
+.selectedUnitsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.selectedUnitsInfo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.selectedUnitItem {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 6px;
+  font-size: 14px;
+}
+
+.removeButton {
+  background: none;
+  border: none;
+  color: #868e96;
+  margin-left: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.removeButton:hover {
+  color: #495057;
+}
+
+/* 현재 선택된 호실 (호수 선택 화면) */
+.currentSelectedUnits {
+  margin: 15px 0;
+}
+
+.currentSelectedUnits h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #495057;
+}
+
+.selectedUnitsChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.unitChip {
+  display: flex;
+  align-items: center;
+  background-color: #4dabf7;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 14px;
+}
+
+.removeChip {
+  background: none;
+  border: none;
+  color: #e9ecef;
+  margin-left: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.removeChip:hover {
+  color: white;
+}
+.selectedFloorUnitsList {
+  margin: 10px 0;
+  padding: 8px;
+}
+
+.selectedFloorUnitItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  margin-bottom: 6px;
+}
+
+.floorUnitText {
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.removeButton {
+  background-color: transparent;
+  color: #777;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 2px 8px;
+  border-radius: 50%;
+}
+
+.removeButton:hover {
+  background-color: #e0e0e0;
+  color: #555;
+}
+
+.undergroundList li:last-child {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* 옥탑 목록 스타일 */
+.rooftopList {
+  margin-top: 20px;
+}
+
+/* 층별 섹션 스타일 */
+.floorSection {
+  margin-bottom: 24px;
+}
+
+.floorSection:last-child {
+  margin-bottom: 0;
+}
+
+.floorLabel {
+  font-size: 16px;
+  font-weight: 600;
+  color: #386937;
+  margin: 20px 0 10px 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #386937;
+}
+
+/* 모바일 반응형 코드 */
+@media screen and (max-width: 768px) {
+  .floor {
+    padding: 0 15px;
+    margin-top: 30px;
+  }
+
+  .floor h2 {
+    font-size: 20px;
+  }
+
+  .searchInput {
+    font-size: 16px;
+  }
+
+  .searchFloor img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .floorList ul li {
+    font-size: 15px;
+    padding: 14px;
+  }
+
+  .unitItem {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .backButton {
+    font-size: 15px;
+  }
+}
+
+/* 더 작은 모바일 디바이스 (344px 이하) */
+@media screen and (max-width: 344px) {
+  .floor {
+    padding: 0 10px;
+    margin-top: 20px;
+  }
+
+  .floor h2 {
+    font-size: 18px;
+  }
+
+  .searchFloor {
+    padding: 12px 15px;
+  }
+
+  .searchInput {
+    font-size: 14px;
+  }
+
+  .searchFloor img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .floorList ul li {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .unitItem {
+    font-size: 13px;
+    padding: 8px;
+    border-radius: 15px;
+  }
+
+  .backButton {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
