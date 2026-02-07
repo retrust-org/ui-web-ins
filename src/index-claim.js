@@ -1,6 +1,7 @@
 import { createAppEntry } from "./appEntryFactory";
 import ClaimRouter from "./apps/claim/Router";
 import { getPartnerCodeFromPath } from "./config/partners";
+import { isB2BDomain } from "./config/domains";
 
 // Claim 전용 basename 설정
 const getBasename = () => {
@@ -14,8 +15,8 @@ const getBasename = () => {
   if (path.includes("/static/")) return "";
 
   const partnerCode = getPartnerCodeFromPath();
-  // b2b 도메인에서는 /claim 경로 사용
-  if (hostname === "b2b.retrust.world" || hostname === "b2b-dev.retrust.world" || hostname === "b2b-stage.retrust.world") return `/${partnerCode}/claim`;
+  // B2B 도메인에서는 /claim 경로 사용
+  if (isB2BDomain(hostname)) return `/${partnerCode}/claim`;
 
   // 다른 도메인에서는 PUBLIC_URL 사용
   return process.env.PUBLIC_URL || "/claim";

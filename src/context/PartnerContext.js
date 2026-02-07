@@ -1,25 +1,26 @@
 // src/contexts/PartnerContext.js
 import React, { createContext, useState, useEffect } from "react";
+import { isB2BDomain as checkB2BDomain } from "../config/domains";
 
 // 파트너 컨텍스트 생성
 export const PartnerContext = createContext();
 
-// 현재 도메인이 b2b.retrust.world인지 확인하는 함수
+// 현재 도메인이 B2B 도메인인지 확인하는 함수
 const isB2BDomain = () => {
   if (typeof window === "undefined") return false;
   const hostname = window.location.hostname;
-  return hostname === "b2b.retrust.world" || hostname === "b2b-dev.retrust.world";
+  return checkB2BDomain(hostname);
 };
 
-// URL 경로에서 파트너 ID 추출 함수 (b2b 도메인 체크 추가)
+// URL 경로에서 파트너 ID 추출 함수 (B2B 도메인 체크 추가)
 const getPartnerCodeFromPath = () => {
   if (typeof window === "undefined") return "testb2b";
 
   const path = window.location.pathname;
   const hostname = window.location.hostname;
 
-  // b2b.retrust.world 도메인에서만 파트너 코드 추출
-  if (hostname === "b2b.retrust.world" || hostname === "b2b-dev.retrust.world") {
+  // B2B 도메인에서만 파트너 코드 추출
+  if (checkB2BDomain(hostname)) {
     const partnerMatch = path.match(/^\/([^\/]+)/);
     if (partnerMatch && partnerMatch[1]) {
       return partnerMatch[1];
@@ -27,7 +28,7 @@ const getPartnerCodeFromPath = () => {
     return "testb2b";
   }
 
-  // b2b 도메인이 아닌 경우 null 반환 (파트너 기능 비활성화)
+  // B2B 도메인이 아닌 경우 null 반환 (파트너 기능 비활성화)
   return null;
 };
 

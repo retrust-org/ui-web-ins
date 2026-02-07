@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "../../css/common/Footer.module.css";
 import DownChk from "../../assets/DownChk.svg";
+import { isB2BDomain } from "../../config/domains";
 
 function Footer() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,7 @@ function Footer() {
   const emergencyNavigate = () => {
     // 부드러운 전환을 위한 약간의 지연
     setTimeout(() => {
-      if (hostname === "b2b.retrust.world" || hostname === "b2b-dev.retrust.world") {  // 다른 도메인에서는 현재 경로 유지
+      if (isB2BDomain(hostname)) {  // 다른 도메인에서는 현재 경로 유지
         const pathSegments = window.basename.split('/');
         const partnerCd = pathSegments[0];
         window.location.href = `${window.location.origin}/${partnerCd}/claim/emergencySupport`;
@@ -22,10 +23,10 @@ function Footer() {
 
   const navigateToPage = (path) => {
     setTimeout(() => {
-      if (hostname === "b2b.retrust.world" || hostname === "b2b-dev.retrust.world") {
+      if (isB2BDomain(hostname)) {
         window.location.href = `${window.location.origin}${window.basename}/claim${path}`;
       } else {
-        //        // b2b 도메인에서는 basename을 그대로 사용 (이미 /claim이 포함됨)
+        //        // B2B 도메인에서는 basename을 그대로 사용 (이미 /claim이 포함됨)
         window.location.href = `${window.location.origin}${path}`;
       }
     }, 100);

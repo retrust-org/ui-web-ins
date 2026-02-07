@@ -1,6 +1,7 @@
 import { createAppEntry } from "./appEntryFactory";
 import LongTermRouter from "./apps/trip/longterm/Router";
 import { getPartnerCodeFromPath } from "./config/partners";
+import { isB2BDomain } from "./config/domains";
 
 // LongTerm 전용 basename 설정
 const getBasename = () => {
@@ -13,7 +14,7 @@ const getBasename = () => {
   // 정적 파일 경로 처리는 basename 없이
   if (path.includes("/static/")) return "";
 
-  if (hostname === "b2b.retrust.world" || hostname === "b2b-dev.retrust.world" || hostname === "b2b-stage.retrust.world") {
+  if (isB2BDomain(hostname)) {
     return `/${partnerCode}/longterm`;
   }
 

@@ -1,4 +1,5 @@
 import { usePartner } from "./usePartner";
+import { isB2BDomain } from "../config/domains";
 
 export const useHomeNavigate = () => {
   // Hook을 최상위에서 호출
@@ -7,8 +8,8 @@ export const useHomeNavigate = () => {
   const navigateToHome = () => {
     const hostname = window.location.hostname;
 
-    // b2b 도메인인지 확인
-    if (hostname === "b2b.retrust.world" || hostname === "b2b-dev.retrust.world" || hostname === "b2b-stage.retrust.world") {
+    // B2B 도메인인지 확인
+    if (isB2BDomain(hostname)) {
       let partnerCode = null;
 
       // 1. window.basename에서 파트너 코드 추출

@@ -1,6 +1,7 @@
 import { createAppEntry } from "./appEntryFactory";
 import DomesticRouter from "./apps/trip/domestic/Router";
 import { getPartnerCodeFromPath } from "./config/partners";
+import { isB2BDomain } from "./config/domains";
 
 // Domestic 전용 basename 설정
 const getBasename = () => {
@@ -14,7 +15,7 @@ const getBasename = () => {
   if (path.includes("/static/")) return "";
 
   // 도메인별 경로 처리
-  if (hostname === "b2b.retrust.world" || hostname === "b2b-dev.retrust.world" || hostname === "b2b-stage.retrust.world") return `/${partnerCode}/domestic`;
+  if (isB2BDomain(hostname)) return `/${partnerCode}/domestic`;
 
   return "/trip/domestic";
 };
